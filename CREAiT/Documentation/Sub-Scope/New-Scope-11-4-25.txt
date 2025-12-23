@@ -1,0 +1,23 @@
+1) splash screen for application start that includes the following information:
+- SW version
+- Window that displays console output
+
+2) Border around the main screen with rounded edges.
+
+3) when the project creation screens are exited, they they are reset to start on the first screen again with all fields empty.
+4) Connect project creation.
+
+5) In project settings, the ProjectSettingsController::getUsers is called before any project is loaded resulting in empty user data list and it's not called again after the project is loaded. Updates are needed only call when a project is loaded.
+
+6) ProjectSettingsController::getAllAIConnections() and ProjectSettingsController::getAllIntegrations() are called on app startup as well as when a project is loaded. We only want to call these when a project is loaded.
+
+7) The Documents need refreshed when the documents button is selected instead of on startup.
+
+
+
+1) enable/disable the following menus:
+- Documents
+- Automations
+- Reviews
+
+These will all be enabled or disabled based on the variables DocumentsEnabled, AutomationsEnabled, ReviewsEnabled.

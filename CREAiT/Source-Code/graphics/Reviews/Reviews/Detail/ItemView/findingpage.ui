@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindingPage</class>
+ <widget class="QWidget" name="FindingPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1135</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#backButton {
+	background: transparent;
+	border: none;
+	font-family: Open Sans;
+	font-size: 24px;
+	line-height: 34px;
+	letter-spacing: 0%;
+	font-weight: 600;
+	color: #1A1A1A;
+}
+
+#findingIDTextLabel,
+#assigneeLabel,
+#verifierLabel {
+	font-family: Open Sans;
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: 0%;
+	font-weight: 600;
+	color: #1A1A1A;
+}
+
+#findingIDValueLabel {
+	font-family: Open Sans;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0%;
+	font-weight: 400;
+	color: #4D4D4D;
+}
+
+#menuButton {
+	background-color: #22084B;
+	border-radius: 8px;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+}
+
+QComboBox {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 4px 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: url(:/images/chevron-down.svg);
+    width: 16px;
+    height: 16px;
+}
+
+QComboBox::down-arrow:on {
+    image: url(:/images/chevron-up.svg);
+}
+
+QComboBox QLineEdit { 
+    color: black; 
+} 
+
+QComboBox QLineEdit:placeholder { 
+    color: gray; 
+}
+
+QComboBox QAbstractItemView {
+    background-color: white;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+	outline: none;
+}
+
+/* Each dropdown item */
+QComboBox QAbstractItemView::item {
+	color: #1A1A1A;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* Hovered item */
+QComboBox QAbstractItemView::item:hover {
+    background-color: #e6f2ff;
+}
+
+/* Selected item */
+QComboBox QAbstractItemView::item:selected {
+    background-color: #d0e8ff;
+    color: #1a1a1a;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>18</number>
+   </property>
+   <property name="leftMargin">
+    <number>18</number>
+   </property>
+   <property name="topMargin">
+    <number>18</number>
+   </property>
+   <property name="rightMargin">
+    <number>18</number>
+   </property>
+   <property name="bottomMargin">
+    <number>18</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>12</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="backButton">
+       <property name="text">
+        <string>Finding</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../../../../Resources/Resources.qrc">
+         <normaloff>:/images/Automations/back.png</normaloff>:/images/Automations/back.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="findingIDTextLabel">
+          <property name="text">
+           <string>Finding ID:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="findingIDValueLabel">
+          <property name="text">
+           <string>WYGH324</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QWidget" name="AssigneeBox" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>42</height>
+        </size>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="assigneeLabel">
+          <property name="text">
+           <string>Assignee:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="assigneeSelect">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>190</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>190</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="VerifierBox" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>42</height>
+        </size>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>5</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="verifierLabel">
+          <property name="text">
+           <string>Verifier:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="verifierSelect">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>190</horstretch>
+            <verstretch>40</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>190</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="menuButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>160</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>160</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LayoutDirection::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Implemented</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../../../../Resources/Resources.qrc">
+         <normaloff>:/images/Reviews/dropdown_white.svg</normaloff>:/images/Reviews/dropdown_white.svg</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="container">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1080</width>
+        <height>939</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>18</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="FindingWidget" name="findingWidget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>168</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="ReviewItemDetailTable" name="reviewItemDetailTable" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>743</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>743</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="FindingCommentPanel" name="commentPanel" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>150</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ReviewItemDetailTable</class>
+   <extends>QWidget</extends>
+   <header>reviewitemdetailtable.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FindingCommentPanel</class>
+   <extends>QWidget</extends>
+   <header>findingcommentpanel.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FindingWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">findingwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../../../../Resources/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

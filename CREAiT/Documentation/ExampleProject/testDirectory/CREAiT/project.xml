@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+<project>
+	<fields />
+	<projectInfo name="Testing">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-0">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-0</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-1">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-1</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-2">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-2</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-3">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-3</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-4">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-4</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-5">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-5</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-6">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-6</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-7">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-7</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-8">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-8</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-9">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-9</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-10">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-10</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-11">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-11</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-12">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-12</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-13">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-13</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-14">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-14</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-15">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-15</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-16">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-16</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-17">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-17</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-18">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-18</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-19">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-19</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-20">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-20</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-21">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-21</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-22">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-22</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-23">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-23</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-24">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-24</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-25">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-25</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-26">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-26</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-27">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-27</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-28">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-28</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-29">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-29</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-30">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-30</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-31">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-31</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-32">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-32</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-33">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-33</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-34">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-34</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-35">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-35</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-36">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-36</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-37">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-37</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-38">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-38</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-39">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-39</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-40">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-40</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-41">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-41</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-42">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-42</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-43">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-43</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-44">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-44</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-45">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-45</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-46">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-46</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-47">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-47</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-48">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-48</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="Testing-49">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>Testing-49</projectName>
+			<type>svn</type>
+			<credentialsFileName />
+			<description />
+			<dataBaseName />
+			<CMURL />
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+	<projectInfo name="testing-vo3">
+		<fields>
+			<fileNameOnly>project.xml</fileNameOnly>
+			<description />
+			<CMURL />
+			<dataBaseName />
+			<credentialsFileName />
+			<type>local</type>
+			<projectName>testing-vo3</projectName>
+			<dataBaseURL />
+			<IDPrefix />
+		</fields>
+	</projectInfo>
+</project>

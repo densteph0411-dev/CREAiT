@@ -1,0 +1,15 @@
+<!-- tableRemoveColumn.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <!-- Table outline -->
+  <rect x="3" y="3" width="10" height="14" rx="1" ry="1"
+        fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Horizontal row lines -->
+  <line x1="3"  y1="7.67" x2="13" y2="7.67" stroke="currentColor" stroke-width="1.2"/>
+  <line x1="3"  y1="12.33" x2="13" y2="12.33" stroke="currentColor" stroke-width="1.2"/>
+  <!-- Vertical column lines -->
+  <line x1="6.5" y1="3" x2="6.5" y2="17" stroke="currentColor" stroke-width="1.2"/>
+  <line x1="9.5" y1="3" x2="9.5" y2="17" stroke="currentColor" stroke-width="1.2"/>
+  <!-- Minus sign (to the right of table) -->
+  <line x1="15.5" y1="10.5" x2="20.5" y2="10.5"
+        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

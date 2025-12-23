@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/record/SwTP_17.xml</fileName>
+		<type>Software Test Procedure</type>
+		<description>This is the description for SwTP_17</description>
+		<title>Software Test Procedure 17</title>
+		<deleted />
+		<lastModifiedBy>User Number 17</lastModifiedBy>
+		<status>Draft</status>
+		<lastModifiedOn>2025-11-05 09:32:44</lastModifiedOn>
+		<version>1</version>
+		<parent>DIR_17</parent>
+		<treeViewIndex>MOD_17</treeViewIndex>
+		<field_1>field Value 1</field_1>
+		<field_2>field Value 2</field_2>
+		<field_3>field Value 3</field_3>
+		<field_4>field Value 4</field_4>
+	</fields>
+	<links>
+		<link direction="Up" type="Trace">SwTC_17</link>
+		<link direction="Down" type="Trace">Code_17</link>
+	</links>
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-05 09:32:44">Initial Version</version>
+		<version versionNumber="2" versionDate="2025-11-05 09:32:44">Added Link to SwTC_17</version>
+		<version versionNumber="3" versionDate="2025-11-05 09:32:44">Added Link to Code_17</version>
+	</versions>
+</record>

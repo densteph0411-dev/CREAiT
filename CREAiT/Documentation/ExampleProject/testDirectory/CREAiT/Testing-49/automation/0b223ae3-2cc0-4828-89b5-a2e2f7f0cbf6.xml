@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<fields>
+	<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/automation/0b223ae3-2cc0-4828-89b5-a2e2f7f0cbf6.xml</fileName>
+	<title>automation 14</title>
+	<description>This is the description for 0b223ae3-2cc0-4828-89b5-a2e2f7f0cbf6</description>
+	<status />
+	<lastModifiedBy>User Number 14</lastModifiedBy>
+	<type>automation</type>
+	<deleted>false</deleted>
+	<lastModifiedOn />
+	<version />
+	<AIModel />
+	<prompt />
+	<triggerType />
+	<field_1>field Value 1</field_1>
+	<durationType />
+	<duration />
+	<exampleInput_1 />
+	<field_2>field Value 2</field_2>
+	<field_3>field Value 3</field_3>
+	<field_4>field Value 4</field_4>
+</fields>

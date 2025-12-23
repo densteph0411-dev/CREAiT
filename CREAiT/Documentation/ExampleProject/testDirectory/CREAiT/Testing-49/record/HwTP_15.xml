@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/record/HwTP_15.xml</fileName>
+		<type>Hardware Test Procedure</type>
+		<description>This is the description for HwTP_15</description>
+		<title>Hardware Test Procedure 15</title>
+		<deleted />
+		<lastModifiedBy>User Number 15</lastModifiedBy>
+		<status>Draft</status>
+		<lastModifiedOn>2025-11-05 09:32:42</lastModifiedOn>
+		<version>1</version>
+		<parent>DIR_15</parent>
+		<treeViewIndex>DRW_14</treeViewIndex>
+		<field_1>field Value 1</field_1>
+		<field_2>field Value 2</field_2>
+		<field_3>field Value 3</field_3>
+		<field_4>field Value 4</field_4>
+	</fields>
+	<links>
+		<link direction="Up" type="Trace">HwTC_15</link>
+		<link direction="Down" type="Trace">DRW_15</link>
+	</links>
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-05 09:32:42">Initial Version</version>
+		<version versionNumber="2" versionDate="2025-11-05 09:32:42">Added Link to HwTC_15</version>
+		<version versionNumber="3" versionDate="2025-11-05 09:32:42">Added Link to DRW_15</version>
+	</versions>
+</record>

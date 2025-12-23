@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<fields>
+	<version />
+	<tool />
+	<lastModifiedOn />
+	<userID />
+	<description>This is the description for e109ae8c-479a-4e4e-a1d0-d8ec54bae3b3</description>
+	<title>integration 2</title>
+	<passWord />
+	<ID>e1f48e66-87f8-4f06-ba73-f0ba71dabff9</ID>
+	<url />
+	<deleted>false</deleted>
+	<key />
+	<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/connection/e109ae8c-479a-4e4e-a1d0-d8ec54bae3b3.xml</fileName>
+	<lastModifiedBy>User Number 2</lastModifiedBy>
+	<type>integration</type>
+	<field_1>field Value 1</field_1>
+	<field_2>field Value 2</field_2>
+	<field_3>field Value 3</field_3>
+	<field_4>field Value 4</field_4>
+</fields>

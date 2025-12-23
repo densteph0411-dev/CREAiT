@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RecordView</class>
+ <widget class="QWidget" name="RecordView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1437</width>
+    <height>847</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#RecordView {
+	background-color: white;
+}
+
+QPushButton {
+	background: transparent;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>24</number>
+   </property>
+   <property name="leftMargin">
+    <number>16</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>16</number>
+   </property>
+   <property name="bottomMargin">
+    <number>12</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="headerRow" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>42</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>12</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="recordTitleButton">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>34</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background: transparent;
+	color: #1A1A1A;
+	font-family: Open Sans;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 34px;
+	letter-spacing: 0%;
+}</string>
+        </property>
+        <property name="text">
+         <string>Software Testing Mechanism</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../../Resources/Resources.qrc">
+          <normaloff>:/images/Project/nav-back.svg</normaloff>:/images/Project/nav-back.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="RecIDPart" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="IdLabel">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+font-family: Open Sans;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+letter-spacing: 0%;
+color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>Id:</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::TextFormat::AutoText</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="recordIDLabel">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+font-family: Open Sans;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+color: #666666
+}</string>
+           </property>
+           <property name="text">
+            <string>#WTGH234</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="versionHistoryButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #1A1A1A;
+	font-family: Open Sans;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: 0%;
+	text-decoration: underline;
+}
+
+QPushButton:hover {
+    background-color: #D6ECFF;
+}
+
+QPushButton:pressed {
+    background-color: #B7DCFF;
+    padding-top: 2px;
+	padding-left: 2px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Version History</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="editRecordButton">
+        <property name="minimumSize">
+         <size>
+          <width>135</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background: #FDB515;
+	border: none;
+	border-radius: 8px;
+	font-family: Open-Sans;
+	font-weight: 500;
+	font-size: 18px;
+	color: white;
+}
+
+QPushButton:hover {
+    background-color: #E6A512;
+}
+
+QPushButton:pressed {
+    background-color: #CC8F0F;
+    padding-top: 2px;
+	padding-left: 2px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Edit</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="fieldRow1" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>68</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="typeGroup" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="typeHeader" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #1A1A1A;
+font-family: Open Sans;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="typeIcon" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/images/Record/type-icon.svg);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="typeTitleLabel">
+              <property name="text">
+               <string>Type</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="typeLabel">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>26</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #4D4D4D;
+font-family: Open Sans;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <property name="text">
+            <string>System Requirement</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QWidget" name="lastModByGroup" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="lastModByHeader" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #1A1A1A;
+font-family: Open Sans;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="lastModByIcon" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/images/Record/modified-by-icon.svg);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lastModByTitle">
+              <property name="text">
+               <string>Last Modified By</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lastModByLabel">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #4D4D4D;
+font-family: Open Sans;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <property name="text">
+            <string>John Doe</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QWidget" name="lastModOnGroup" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="lastModOnHeader" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #1A1A1A;
+font-family: Open Sans;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="lastModOnIcon" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/images/Record/modified-on-icon.svg);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lastModOnTitle">
+              <property name="text">
+               <string>Last Modified On</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lastModOnLabel">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #4D4D4D;
+font-family: Open Sans;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <property name="text">
+            <string>March 23,2025 12:129 PM</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QWidget" name="versionGroup" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="versionHeader" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #1A1A1A;
+font-family: Open Sans;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="versionIcon" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/images/Record/version-icon.svg);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="versionTitle">
+              <property name="text">
+               <string>Version</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="versionLabel">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #4D4D4D;
+font-family: Open Sans;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <property name="text">
+            <string>2.0.8.9.1</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QWidget" name="statusGroup" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="statusHeader" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #1A1A1A;
+font-family: Open Sans;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="statusIcon" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">image: url(:/images/Record/version-icon.svg);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="statusTitle">
+              <property name="text">
+               <string>Status</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="statusLabel">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #4D4D4D;
+font-family: Open Sans;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <property name="text">
+            <string>Draft</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="fieldRow2" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>172</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>200</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_24" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>32</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widget_25" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/images/Record/desc-icon.svg);</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_13">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #1A1A1A;
+font-family: Open Sans;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <property name="text">
+            <string>Description</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="descTextBrowser">
+        <property name="styleSheet">
+         <string notr="true">QTextBrowser {
+font-family: Open Sans;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+letter-spacing: 0%;
+color: #4D4D4D;
+background-color: rgb(255, 255, 255);
+}
+
+QScrollBar {
+    background: transparent;
+}
+
+QScrollBar:vertical {
+    width: 6px;
+    background: transparent;
+}
+QScrollBar::handle:vertical {
+    background: #4B286D;
+    border-radius: 3px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}</string>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Open Sans'; font-size:18px; font-weight:500; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:18pt; font-weight:400;&quot;&gt;Lorem ipsum dolor sit amet consectetur. Sapien fermentum viverra ut nulla. Id condimentum enim at ullamcorper dolor purus morbi. Senectus sapien tempor sem viverra. Dictum porttitor enim viverra sed accumsan. Arcu neque est sed quisque feugiat nisl ac a. Ac dolor viverra massa luctus diam. Ac amet malesuada sodales dignissim turpis non in nulla at. Consectetur eget gravida magnis porta nullam in malesuada facilisis. Vestibulum commodo dui posuere nascetur cras neque sed. Vestibulum pellentesque est nulla pretium in tempus sed platea. Nam imperdiet vitae turpis in cras. Pretium integer feugiat a at risus. Nec sollicitudin suspendisse tellus See more&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="fieldRow3" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_9">
+      <property name="spacing">
+       <number>16</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="additionalHeaderRow" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>32</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="addIcon" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/images/Record/additional-fields-icon.svg);</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="additionalTitle">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #1A1A1A;
+font-family: Open Sans;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <property name="text">
+            <string>Additional Fields</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableView" name="additionalFieldsTableView">
+        <property name="styleSheet">
+         <string notr="true">QTableView {
+	color: #4D4D4D;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: white;
+	font-family: Open Sans;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+}
+
+QHeaderView::section {
+	font-family: Open Sans;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+    background-color: #fafafa;
+    padding: 8px;
+    border: none;
+    font-weight: 600;
+    color: #333;
+}
+
+QTableView::item {
+    padding: 12px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+QTableView::item:selected {
+    background-color: transparent;
+}
+
+QScrollBar {
+    background: transparent;
+}
+
+QScrollBar:vertical {
+    width: 6px;
+    background: transparent;
+}
+QScrollBar::handle:vertical {
+    background: #4B286D;
+    border-radius: 3px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}</string>
+        </property>
+        <property name="verticalScrollMode">
+         <enum>QAbstractItemView::ScrollMode::ScrollPerPixel</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="fieldRow4" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_8">
+      <property name="spacing">
+       <number>16</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="linksHeaderRow" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>42</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="linksIcon" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/images/Record/links-icon.svg);</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="linksTitleLabel">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+color: #1A1A1A;
+font-family: Open Sans;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0%;
+}</string>
+           </property>
+           <property name="text">
+            <string>Links</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="addLinkButton">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>42</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>42</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	font-family: Open Sans;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	color: #1A1A1A;
+	border-radius: 8px;
+	border: 1.5px solid #1A1A1A;
+}
+
+QPushButton:hover {
+    background-color: #D6ECFF;
+}
+
+QPushButton:pressed {
+    background-color: #B7DCFF;
+    padding-top: 2px;
+	padding-left: 2px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Add Link</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../../../Resources/Resources.qrc">
+             <normaloff>:/images/Record/plus-icon.svg</normaloff>:/images/Record/plus-icon.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableView" name="linksTableView">
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView {
+	color: #4D4D4D;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: white;
+	font-family: Open Sans;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+}
+
+QHeaderView::section {
+	font-family: Open Sans;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+    background-color: #fafafa;
+    padding: 8px;
+    border: none;
+    font-weight: 600;
+    color: #333;
+}
+
+QTableView::item {
+    padding: 12px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+QTableView::item:selected {
+    background-color: transparent;
+}
+
+QScrollBar {
+    background: transparent;
+}
+
+QScrollBar:vertical {
+    width: 6px;
+    background: transparent;
+}
+QScrollBar::handle:vertical {
+    background: #4B286D;
+    border-radius: 3px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}</string>
+        </property>
+        <property name="verticalScrollMode">
+         <enum>QAbstractItemView::ScrollMode::ScrollPerPixel</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../Resources/Resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>versionHistoryButton</sender>
+   <signal>clicked()</signal>
+   <receiver>RecordView</receiver>
+   <slot>onVersionHistoryButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1203</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>editRecordButton</sender>
+   <signal>clicked()</signal>
+   <receiver>RecordView</receiver>
+   <slot>onEditRecordButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1353</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addLinkButton</sender>
+   <signal>clicked()</signal>
+   <receiver>RecordView</receiver>
+   <slot>onAddLinkButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1350</x>
+     <y>631</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onVersionHistoryButtonClicked()</slot>
+  <slot>onRecordLinkButtonClicked()</slot>
+  <slot>onEditRecordButtonClicked()</slot>
+  <slot>onAddLinkButtonClicked()</slot>
+  <slot>onMouseHoverLinkTableItem(QModelIndex)</slot>
+ </slots>
+</ui>

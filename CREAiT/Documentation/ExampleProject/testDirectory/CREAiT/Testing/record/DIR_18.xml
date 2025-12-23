@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<lastModifiedBy />
+		<deleted>true</deleted>
+		<status>Draft</status>
+		<fileName>C:/svnCheckouts/Systaero/Software/CREAiT/CREAiT-Qt-GUI/CREAiT/Documentation/ExampleProject/testDirectory/CREAiT/Testing/record/DIR_18.xml</fileName>
+		<title />
+		<type>Directory</type>
+		<parent>PROJ</parent>
+		<description />
+		<treeViewIndex>DIR_17</treeViewIndex>
+		<version>1</version>
+		<lastModifiedOn>2025-11-12 02:44:09</lastModifiedOn>
+	</fields>
+	<links />
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-12 02:44:09">Initial Version</version>
+	</versions>
+</record>

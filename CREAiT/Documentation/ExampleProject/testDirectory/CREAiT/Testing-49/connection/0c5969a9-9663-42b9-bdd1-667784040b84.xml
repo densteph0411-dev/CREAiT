@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<fields>
+	<ModelOrVersion>ModelVersion1</ModelOrVersion>
+	<description />
+	<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/connection/0c5969a9-9663-42b9-bdd1-667784040b84.xml</fileName>
+	<ID>0c81cce0-04ca-4325-8ab7-1fb9f012f687</ID>
+	<type>integration</type>
+	<Key>ABCD34546565</Key>
+	<ToolName>integration1</ToolName>
+	<url />
+	<lastModifiedBy>emoyle</lastModifiedBy>
+	<lastModifiedOn>2025-11-05 09:35:59</lastModifiedOn>
+	<deleted>false</deleted>
+</fields>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TrainingsViewPage</class>
+ <widget class="QWidget" name="TrainingsViewPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>909</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>16</number>
+   </property>
+   <property name="leftMargin">
+    <number>18</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>18</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>18</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="headerLabel">
+       <property name="styleSheet">
+        <string notr="true">font-family: Open Sans;
+font-weight: 600;
+font-size: 24px;
+line-height: 34px;
+letter-spacing: 0%;
+color: #1A1A1A;</string>
+       </property>
+       <property name="text">
+        <string>Trainings</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QComboBox" name="aiModelSelect">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>229</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>229</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: url(:/images/chevron-down.svg);
+    width: 16px;
+    height: 16px;
+}
+
+QComboBox::down-arrow:on {
+    image: url(:/images/chevron-up.svg);
+}
+
+QComboBox QLineEdit { 
+    color: black; 
+} 
+
+QComboBox QLineEdit:placeholder { 
+    color: gray; 
+}</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>229</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>229</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QDateEdit {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+    color: #333;
+}
+
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 24px;
+    border: none;
+}
+
+QDateEdit::down-arrow {
+    image: url(:/images/chevron-down.svg);
+    width: 16px;
+    height: 16px;
+}
+
+
+</string>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+       <property name="timeSpec">
+        <enum>Qt::TimeSpec::LocalTime</enum>
+       </property>
+       <property name="date">
+        <date>
+         <year>2025</year>
+         <month>6</month>
+         <day>1</day>
+        </date>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="trainingCreateButton">
+       <property name="minimumSize">
+        <size>
+         <width>167</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>167</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: #FDB515;
+	border: none;
+	border-radius: 8px;
+	font-family: Open-Sans;
+	font-weight: 500;
+	font-size: 18px;
+	color: white;
+}
+
+QPushButton:hover {
+    background-color: #E6A512;
+}
+
+QPushButton:pressed {
+    background-color: #CC8F0F;
+    padding-top: 2px;
+	padding-left: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Create Training</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="container">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>871</width>
+        <height>457</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

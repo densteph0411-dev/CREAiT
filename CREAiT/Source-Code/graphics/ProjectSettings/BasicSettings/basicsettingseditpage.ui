@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BasicSettingsEditPage</class>
+ <widget class="QWidget" name="BasicSettingsEditPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>853</width>
+    <height>427</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#additionalFieldAddButton {
+	background: white;
+	border: 2px dashed black;
+	border-radius: 8px;
+	font-family: Open-Sans;
+	font-weight: 500;
+	font-size: 18px;
+	color: black;
+}
+
+#additionalFieldAddButton:hover {
+    background-color: #D6ECFF;
+}
+
+#additionalFieldAddButton:pressed {
+    background-color: #B7DCFF;
+    padding-top: 2px;
+	padding-left: 2px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>16</number>
+   </property>
+   <property name="leftMargin">
+    <number>18</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>18</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="headerLayout">
+     <property name="spacing">
+      <number>16</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="backButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>240</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>240</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;
+border: none;
+font-family: Open Sans;
+font-size: 24px;
+line-height: 34px;
+letter-spacing: 0%;
+font-weight: 600;</string>
+       </property>
+       <property name="text">
+        <string>Edit Basic Settings</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../../Resources/Resources.qrc">
+         <normaloff>:/images/nav_back.svg</normaloff>:/images/nav_back.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>135</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>135</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: white;
+	border: 2px solid #1A1A1A;
+	border-radius: 8px;
+	font-family: Open Sans;
+	font-weight: 500;
+	font-size: 18px;
+	color: #1A1A1A;
+}
+
+QPushButton:hover {
+    background-color: #D6ECFF;
+}
+
+QPushButton:pressed {
+    background-color: #B7DCFF;
+    padding-top: 2px;
+	padding-left: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveButton">
+       <property name="minimumSize">
+        <size>
+         <width>135</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>135</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	background: #FDB515;
+	border: none;
+	border-radius: 8px;
+	font-family: Open-Sans;
+	font-weight: 500;
+	font-size: 18px;
+	color: white;
+}
+
+QPushButton:hover {
+    background-color: #E6A512;
+}
+
+QPushButton:pressed {
+    background-color: #CC8F0F;
+    padding-top: 2px;
+	padding-left: 2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="container">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>815</width>
+        <height>94</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QVBoxLayout" name="containerLayout">
+       <property name="spacing">
+        <number>18</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="Accordion" name="basicInfoAccordion" native="true"/>
+       </item>
+       <item>
+        <widget class="Accordion" name="directoriesAccordion" native="true"/>
+       </item>
+       <item>
+        <widget class="Accordion" name="databaseAccordion" native="true"/>
+       </item>
+       <item>
+        <widget class="Accordion" name="additionalFieldsAccordion" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Accordion</class>
+   <extends>QWidget</extends>
+   <header>accordion.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../../Resources/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

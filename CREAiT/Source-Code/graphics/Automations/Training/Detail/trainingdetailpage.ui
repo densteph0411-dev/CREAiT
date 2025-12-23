@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TrainingDetailPage</class>
+ <widget class="QWidget" name="TrainingDetailPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1007</width>
+    <height>802</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#backButton {
+	background: transparent;
+	border: none;
+	font-family: Open Sans;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 34px;
+	letter-spacing: 0%;
+}
+
+#editButton {
+	background-color: white;
+	border: 1.5px solid #1a1a1a;
+	border-radius: 8px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500;
+}
+
+#trainingStatusPanel {
+	background-color: #EEF4F6;
+	border-radius: 8px;
+	border: 1px solid #34343426;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing">
+    <number>24</number>
+   </property>
+   <property name="leftMargin">
+    <number>18</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>18</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="headerLayout">
+     <item>
+      <widget class="QPushButton" name="backButton">
+       <property name="minimumSize">
+        <size>
+         <width>24</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>307</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Lorem ipsum nibh lacus</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../../../Resources/Resources.qrc">
+         <normaloff>:/images/nav_back.svg</normaloff>:/images/nav_back.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editButton">
+       <property name="minimumSize">
+        <size>
+         <width>178</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>178</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Edit</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+     </property>
+     <widget class="QWidget" name="container">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1399</width>
+        <height>675</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="containerLayout">
+       <property name="spacing">
+        <number>18</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="TrainingDetailMainPanel" name="mainPanel" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>867</width>
+           <height>584</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>867</width>
+           <height>584</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QScrollBar:vertical {
+    background: #F0F0F0;
+    width: 6px;
+    margin: 0px;
+    border-radius: 3px;
+}
+QScrollBar::handle:vertical {
+    background: #2D1457;
+    min-height: 30px;
+    border-radius: 3px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical,
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+QScrollBar:horizontal {
+    background: #F0F0F0;
+    height: 6px;
+    margin: 0px;
+    border-radius: 3px;
+}
+QScrollBar::handle:horizontal {
+    background: #2D1457;
+    min-width: 30px;
+    border-radius: 3px;
+}
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal,
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: none;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="TrainingStatusPanel" name="trainingStatusPanel" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>514</width>
+           <height>584</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>514</width>
+           <height>584</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TrainingDetailMainPanel</class>
+   <extends>QWidget</extends>
+   <header>trainingdetailmainpanel.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TrainingStatusPanel</class>
+   <extends>QWidget</extends>
+   <header>trainingstatuspanel.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../../../Resources/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

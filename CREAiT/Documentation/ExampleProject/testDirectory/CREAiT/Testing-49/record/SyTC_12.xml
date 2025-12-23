@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/record/SyTC_12.xml</fileName>
+		<type>System Test Case</type>
+		<description>This is the description for SyTC_12</description>
+		<title>System Test Case 12</title>
+		<deleted />
+		<lastModifiedBy>User Number 12</lastModifiedBy>
+		<status>Draft</status>
+		<lastModifiedOn>2025-11-05 09:32:40</lastModifiedOn>
+		<version>1</version>
+		<parent>DIR_12</parent>
+		<treeViewIndex>HwTest_12</treeViewIndex>
+		<field_1>field Value 1</field_1>
+		<field_2>field Value 2</field_2>
+		<field_3>field Value 3</field_3>
+		<field_4>field Value 4</field_4>
+	</fields>
+	<links>
+		<link direction="Up" type="Trace">SyREQ_13</link>
+		<link direction="Down" type="Trace">SyTP_12</link>
+	</links>
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-05 09:32:40">Initial Version</version>
+		<version versionNumber="2" versionDate="2025-11-05 09:32:40">Added Link to SyREQ_13</version>
+		<version versionNumber="3" versionDate="2025-11-05 09:32:40">Added Link to SyTP_12</version>
+	</versions>
+</record>

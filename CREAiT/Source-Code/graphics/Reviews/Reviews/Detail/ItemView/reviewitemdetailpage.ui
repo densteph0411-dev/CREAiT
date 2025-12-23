@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReviewItemDetailPage</class>
+ <widget class="QWidget" name="ReviewItemDetailPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1239</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#backButton {
+	background: transparent;
+	border: none;
+	font-family: Open Sans;
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 600;
+	letter spacing: 0%
+}
+
+#editButton {
+	background-color: white;
+	border: 1.5px solid #1a1a1a;
+	border-radius: 8px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500;
+}
+
+#saveButton {
+	background-color: #FBAE17;
+	border: none;
+	border-radius: 8px;
+	font-family: Open Sans;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+	color: white;
+}
+
+QLabel {
+	color: #1A1A1A;
+	font-family: Open Sans;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+}
+
+#addReviewItemButton,
+#addReviewerItemButton,
+#addRequestItemButton {
+	background-color: white;
+    border: 2px dashed #22084B;
+    border-radius: 8px;
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    padding: 9px 18px;
+}
+
+#addChecklistButton,
+#addStandardButton {
+	background: transparent;
+	border: none;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>20</number>
+   </property>
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="backButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>24</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1662775</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>System Requirements &gt; OS Requirements &gt; Compatibility with MacOS Sonoma</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../../../../Resources/Resources.qrc">
+         <normaloff>:/images/nav_back.svg</normaloff>:/images/nav_back.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Create Finding</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="container">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1180</width>
+        <height>1003</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="containerLayout">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="PrimaryBox" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>70</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="primaryBoxLayout">
+          <property name="spacing">
+           <number>100</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="AutomationCellProperty" name="startVersion" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>200</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="AutomationCellProperty" name="endVersion" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>220</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>220</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="ReviewItemDetailTable" name="reviewItemDetailTable" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>743</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>743</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="FindingCommentPanel" name="findingPanel" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>150</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AutomationCellProperty</class>
+   <extends>QWidget</extends>
+   <header location="global">automationcellproperty.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReviewItemDetailTable</class>
+   <extends>QWidget</extends>
+   <header>reviewitemdetailtable.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FindingCommentPanel</class>
+   <extends>QWidget</extends>
+   <header>findingcommentpanel.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../../../../Resources/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

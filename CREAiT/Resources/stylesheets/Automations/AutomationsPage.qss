@@ -1,0 +1,6 @@
+#automationsPageContainer {
+    background-color: white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 16px;
+    border-left: 1px solid #34343426;
+}

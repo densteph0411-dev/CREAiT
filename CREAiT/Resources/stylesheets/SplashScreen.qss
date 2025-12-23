@@ -1,0 +1,86 @@
+/* Splash Screen Stylesheet */
+
+#SplashScreen {
+    background: transparent;
+}
+
+#splashContainer {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    border: 2px solid #E0E0E0;
+}
+
+#logoLabel {
+    font-family: 'Open Sans';
+    font-size: 48px;
+    font-weight: 700;
+    color: #1976D2;
+    background: transparent;
+}
+
+#versionLabel {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    color: #424242;
+    background: transparent;
+}
+
+#copyrightLabel {
+    font-family: 'Open Sans';
+    font-size: 11px;
+    font-weight: 400;
+    color: #757575;
+    background: transparent;
+}
+
+#consoleLabel {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 600;
+    color: #424242;
+    background: transparent;
+    padding-left: 4px;
+}
+
+#consoleOutput {
+    background-color: #F5F5F5;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10px;
+    color: #212121;
+    selection-background-color: #1976D2;
+    selection-color: #FFFFFF;
+}
+
+#consoleOutput QScrollBar:vertical {
+    background: #F5F5F5;
+    width: 12px;
+    border-radius: 6px;
+}
+
+#consoleOutput QScrollBar::handle:vertical {
+    background: #BDBDBD;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+#consoleOutput QScrollBar::handle:vertical:hover {
+    background: #9E9E9E;
+}
+
+#consoleOutput QScrollBar::add-line:vertical,
+#consoleOutput QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+#statusLabel {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 500;
+    color: #1976D2;
+    background: transparent;
+}
+

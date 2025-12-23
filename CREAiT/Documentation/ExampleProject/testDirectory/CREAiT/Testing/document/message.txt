@@ -1,0 +1,118 @@
+// Initialize the dataRecord dictionary
+void projectInfoRecord::initialize(void) {
+
+    Data::dictionary->eraseDataTypeByContext("record");
+    Data::dictionary->eraseDataTypeByContext("project");
+    Data::dictionary->eraseDataTypeByContext("credentials");
+    Data::dictionary->eraseDataTypeByContext("linkType");
+    Data::dictionary->eraseDataTypeByContext("recordType");
+
+    // Add the configuration records to the dictionary
+    Data::dictionary->createField("fileName", "project", "", "false", "The path of the project file");
+    Data::dictionary->createField("fileNameOnly", "project", "project.xml", "true", "The project filename");
+
+    // Basic Project Information
+    Data::dictionary->createField("projectName", "project", "", "true", "The name of the project");
+    Data::dictionary->createField("type", "project", "", "true", "The type of the project");
+    Data::dictionary->createField("IDPrefix", "project", "", "true", "The prefix for the record ID");
+    Data::dictionary->createField("credentialsFileName", "project", "", "true", "The credentialsFileName of the project");
+    Data::dictionary->createField("description", "project", "", "true", "The description of the project");
+
+    // Directory information
+    Data::dictionary->createField("baseDirectory", "project", "", "false", "The base directory of the project");
+    Data::dictionary->createField("programDirectory", "project", "", "false", "The directory of the program");
+    Data::dictionary->createField("projectDirectory", "project", "", "false", "The directory of the loaded project within the program");
+    Data::dictionary->createField("recordDirectory", "project", "", "false", "The current record directory");
+    Data::dictionary->createField("automationDirectory", "project", "", "false", "The current automation directory");
+    Data::dictionary->createField("reviewsDirectory", "project", "", "false", "The current reviews directory");
+    Data::dictionary->createField("imageDirectory", "project", "", "false", "The current image directory");
+
+    // Database information
+    Data::dictionary->createField("dataBaseName", "project", "", "true", "The name of the database");
+    Data::dictionary->createField("dataBaseURL", "project", "", "true", "The URL of the database");
+    Data::dictionary->createField("CMURL", "project", "", "true", "The URL of the configuration management system");
+    Data::dictionary->createField("toolName", "project", "CREAiT", "true", "The URL of the configuration management system");
+
+    // Additional Field
+    
+
+    Data::dictionary->createField("fileName", "credentials", "", "true", "The path of the credentials file");
+    Data::dictionary->createField("fileNameOnly", "credentials", "credentials.xml", "true", "The credentials filename");
+    Data::dictionary->createField("userID", "credentials", "", "true", "Login UserName");
+    Data::dictionary->createField("passWord", "credentials", "", "true", "Login Password");
+
+    // Initialize all of the default types
+    Data::dictionary->createField("fileName", "linkType", "", "true", "The path of the file");
+    Data::dictionary->createField("fileNameOnly", "linkType", "linkTypes.xml", "true", "The filename holding this information");
+    Data::dictionary->createField("Traces", "linkType", "", "true", "The prefix for the record ID");
+    Data::dictionary->createField("Allocates", "linkType", "", "true", "The prefix for the record ID");
+    Data::dictionary->createField("Satisfies", "linkType", "", "true", "The prefix for the record ID");
+    Data::dictionary->createField("Associates", "linkType", "", "true", "The prefix for the record ID");
+
+    // Define the record types
+    Data::dictionary->createField("DIR", "recordType", "Directory", "true", "Directories that contain records");
+    Data::dictionary->createField("fileNameOnly", "recordType", "recordTypes.xml", "true", "The filename holding this information");
+    Data::dictionary->createField("SyREQ", "recordType", "System Requirement", "true", "The prefix for the record ID");
+    Data::dictionary->createField("SyTest", "recordType", "System Test", "true", "The prefix for the record ID");
+    Data::dictionary->createField("SyTC", "recordType", "System Test Case", "true", "The prefix for the record ID");
+    Data::dictionary->createField("SyTP", "recordType", "System Test Procedure", "true", "The prefix for the record ID");
+    Data::dictionary->createField("SwREQ", "recordType", "Software Requirement", "true", "The prefix for the record ID");
+    Data::dictionary->createField("SwTest", "recordType", "Software Test", "true", "The prefix for the record ID");
+    Data::dictionary->createField("SwTC", "recordType", "Software Test Case", "true", "The prefix for the record ID");
+    Data::dictionary->createField("SwTP", "recordType", "Software Test Procedure", "true", "The prefix for the record ID");
+    Data::dictionary->createField("HwREQ", "recordType", "Hardware Requirement", "true", "The prefix for the record ID");
+    Data::dictionary->createField("HwTest", "recordType", "Hardware Test", "true", "The prefix for the record ID");
+    Data::dictionary->createField("HwTC", "recordType", "Hardware Test Case", "true", "The prefix for the record ID");
+    Data::dictionary->createField("HwTP", "recordType", "Hardware Test Procedure", "true", "The prefix for the record ID");
+    Data::dictionary->createField("DOC", "recordType", "Document", "true", "The prefix for the record ID");
+    Data::dictionary->createField("Code", "recordType", "Code", "true", "The prefix for the record ID");
+    Data::dictionary->createField("DRW", "recordType", "Drawing", "true", "The prefix for the record ID");
+    Data::dictionary->createField("MOD", "recordType", "Model", "true", "The prefix for the record ID");
+
+    // Set the records Data
+    // ID is not persistent because it changes dynamically
+    Data::dictionary->createField("ID", "record", "", "false", "The record ID");
+    Data::dictionary->createField("fileName", "record", "", "true", "The record fileName");
+    Data::dictionary->createField("type", "record", "", "true", "The record type");
+    Data::dictionary->createField("title", "record", "", "true", "The record title");
+    Data::dictionary->createField("deleted", "record", "false", "true", "The record deletion status");
+    Data::dictionary->createField("description", "record", "", "true", "The record description");
+    Data::dictionary->createField("status", "record", "", "true", "The record status");
+    Data::dictionary->createField("lastModifiedBy", "record", "", "true", "The record lastModifiedBy");
+    Data::dictionary->createField("lastModifiedOn", "record", "", "true", "The record lastModifiedOn");
+    Data::dictionary->createField("version", "record", "", "true", "The record version");
+    Data::dictionary->createField("parent", "record", "", "true", "The parent to the record");
+    Data::dictionary->createField("treeViewIndex", "record", "", "true", "The index of the parent of the record");
+
+    // Set Automations Data
+    Data::dictionary->createField("ID", "automation", "", "false", "The automation ID");
+    Data::dictionary->createField("fileName", "automation", "", "true", "The automation fileName");
+    Data::dictionary->createField("type", "automation", "", "true", "The automation type");
+    Data::dictionary->createField("title", "automation", "", "true", "The automation title");
+    Data::dictionary->createField("deleted", "automation", "false", "true", "The automation deletion status");
+    Data::dictionary->createField("description", "automation", "", "true", "The automation description");
+    Data::dictionary->createField("status", "automation", "", "true", "The automation status");
+    Data::dictionary->createField("lastModifiedBy", "automation", "", "true", "The automation lastModifiedBy");
+    Data::dictionary->createField("lastModifiedOn", "automation", "", "true", "The automation lastModifiedOn");
+    Data::dictionary->createField("version", "automation", "", "true", "The automation version");
+    Data::dictionary->createField("AIModel", "automation", "", "true", "The automation AIModel");
+    Data::dictionary->createField("prompt", "automation", "", "true", "The automation prompt");
+    Data::dictionary->createField("triggerType", "automation", "", "true", "The automation triggerType");
+    Data::dictionary->createField("durationType", "automation", "", "true", "The automation durationType");
+    Data::dictionary->createField("duration", "automation", "", "true", "The automation duration");
+    // These are created as needed for each dataset. For example exampleInput_2 etc...
+    Data::dictionary->createField("exampleInput_1", "automation", "", "true", "The automation exampleInput_1");
+
+    // Set up Integration data
+    Data::addData("ID","integration","","false","Integration ID");
+    Data::addData("tool","integration","","false","Tool Type");
+    Data::addData("userID","integration","","false","testUser");
+    Data::addData("passWord","integration","","false","password");
+    Data::addData("deleted","integration","","false","record deleted");
+
+    // Set up AIconnection data
+    Data::addData("ID","aiconnection","","false","aiconnection ID");
+    Data::addData("tool","aiconnection","","false","Tool Type");
+    Data::addData("AIKey","aiconnection","","false","AI Key");
+    Data::addData("deleted","aiconnection","","false","AI Connection Deleted");
+}

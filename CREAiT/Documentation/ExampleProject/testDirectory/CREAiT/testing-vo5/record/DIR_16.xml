@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<lastModifiedBy />
+		<deleted />
+		<fileName />
+		<status>Draft</status>
+		<title>Hardware Test Case</title>
+		<type>Directory</type>
+		<parent>PROJ</parent>
+		<description>The prefix for the record ID</description>
+		<version>1</version>
+		<treeViewIndex>DIR_15</treeViewIndex>
+		<lastModifiedOn>2025-11-12 02:33:03</lastModifiedOn>
+	</fields>
+	<links />
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-12 02:33:03">Initial Version</version>
+	</versions>
+</record>

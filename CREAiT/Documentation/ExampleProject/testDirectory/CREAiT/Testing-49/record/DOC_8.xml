@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/record/DOC_8.xml</fileName>
+		<type>Document</type>
+		<description>This is the description for DOC_8</description>
+		<title>Document 8</title>
+		<deleted />
+		<lastModifiedBy>User Number 8</lastModifiedBy>
+		<status>Draft</status>
+		<lastModifiedOn>2025-11-05 09:32:38</lastModifiedOn>
+		<version>1</version>
+		<parent>DIR_8</parent>
+		<treeViewIndex>HwREQ_8</treeViewIndex>
+		<field_1>field Value 1</field_1>
+		<field_2>field Value 2</field_2>
+		<field_3>field Value 3</field_3>
+		<field_4>field Value 4</field_4>
+	</fields>
+	<links />
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-05 09:32:38">Initial Version</version>
+	</versions>
+</record>

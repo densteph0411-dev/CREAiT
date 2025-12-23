@@ -1,0 +1,2 @@
+/CREAiT/build
+CREAiT/CREAiT.pro.user

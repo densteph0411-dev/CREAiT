@@ -1,0 +1,20 @@
+AutomationsSideBar {
+    border-right: 1px solid #ccc;
+}
+
+QToolButton {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #22084B;
+    padding: 0px 10px;
+}
+
+QToolButton:hover,
+QToolButton:pressed,
+QToolButton:checked {
+    background-color: #EEF4F6;
+    border-radius: 8px;
+}
+

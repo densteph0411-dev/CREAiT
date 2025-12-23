@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReviewsPage</class>
+ <widget class="QWidget" name="ReviewsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#reviewsPageContainer {
+    background-color: white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 16px;
+    border-left: 1px solid #34343426;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <widget class="ContextSidebar" name="contextSideBar" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>250</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="reviewsPageContainer">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="currentIndex">
+       <number>7</number>
+      </property>
+      <widget class="ReviewsViewPage" name="reviewsViewPage"/>
+      <widget class="StandardsViewPage" name="standardsViewPage"/>
+      <widget class="ChecklistsViewPage" name="checklistsViewPage"/>
+      <widget class="CreateChecklistPage" name="createChecklistPage"/>
+      <widget class="CreateReviewPage" name="createReviewPage"/>
+      <widget class="ReviewDetailPage" name="reviewDetailPage"/>
+      <widget class="ReviewItemDetailPage" name="reviewItemDetailPage"/>
+      <widget class="FindingPage" name="findingPage"/>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ContextSidebar</class>
+   <extends>QWidget</extends>
+   <header>contextsidebar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReviewsViewPage</class>
+   <extends>QWidget</extends>
+   <header location="global">reviewsviewpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ChecklistsViewPage</class>
+   <extends>QWidget</extends>
+   <header location="global">checklistsviewpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StandardsViewPage</class>
+   <extends>QWidget</extends>
+   <header location="global">standardsviewpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CreateChecklistPage</class>
+   <extends>QWidget</extends>
+   <header location="global">createchecklistpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CreateReviewPage</class>
+   <extends>QWidget</extends>
+   <header location="global">createreviewpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReviewDetailPage</class>
+   <extends>QWidget</extends>
+   <header location="global">reviewdetailpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReviewItemDetailPage</class>
+   <extends>QWidget</extends>
+   <header location="global">reviewitemdetailpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FindingPage</class>
+   <extends>QWidget</extends>
+   <header location="global">findingpage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

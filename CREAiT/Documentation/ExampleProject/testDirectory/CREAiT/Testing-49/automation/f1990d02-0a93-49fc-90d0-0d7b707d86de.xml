@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<fields>
+	<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/automation/f1990d02-0a93-49fc-90d0-0d7b707d86de.xml</fileName>
+	<title>training 4</title>
+	<description>This is the description for f1990d02-0a93-49fc-90d0-0d7b707d86de</description>
+	<status />
+	<lastModifiedBy>User Number 4</lastModifiedBy>
+	<type>training</type>
+	<deleted>false</deleted>
+	<lastModifiedOn />
+	<version />
+	<AIModel />
+	<prompt />
+	<triggerType />
+	<field_1>field Value 1</field_1>
+	<durationType />
+	<duration />
+	<exampleInput_1 />
+	<field_2>field Value 2</field_2>
+	<field_3>field Value 3</field_3>
+	<field_4>field Value 4</field_4>
+</fields>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreateProjectPage</class>
+ <widget class="QWidget" name="CreateProjectPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1196</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background: white;
+}
+
+#headerLabel {
+	background: transparent;
+	font-family: Open Sans;
+	font-size: 24px;
+	line-height: 0px;
+	font-weight: 600;
+	color: #1A1A1A;
+}
+
+#cancelButton {
+	background: transparent;
+	border: none;
+	color: #1A1A1A;
+	font-family: Open Sans;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: 0%;
+
+}
+
+#cancelButton:hover {
+	text-decoration: underline;
+}
+
+#cancelButton:pressed {
+	padding-top: 2px;
+	padding-left: 2px;
+}
+
+#scrollArea {
+	border: none;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>60</number>
+   </property>
+   <property name="leftMargin">
+    <number>30</number>
+   </property>
+   <property name="topMargin">
+    <number>30</number>
+   </property>
+   <property name="rightMargin">
+    <number>30</number>
+   </property>
+   <property name="bottomMargin">
+    <number>30</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="headerLayout">
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="headerLabel">
+       <property name="text">
+        <string>Create Project</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="stepProgressLayout">
+     <property name="spacing">
+      <number>7</number>
+     </property>
+     <item>
+      <spacer name="leftHSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="StepProgressBar" name="stepProgressBar" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>1120</width>
+         <height>115</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1116</width>
+         <height>115</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="rightHSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="container">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1136</width>
+        <height>242</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>60</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QStackedWidget" name="mainPanelContainer">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>620</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>620</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="currentIndex">
+            <number>5</number>
+           </property>
+           <widget class="BasicInfoPanel" name="basicInfoPanel"/>
+           <widget class="AdditionalFieldsPanel" name="additionalFieldsPanel"/>
+           <widget class="DirectoriesPanel" name="directoriesPanel"/>
+           <widget class="DatabaseConfigurationPanel" name="databaseConfigPanel"/>
+           <widget class="IntegrationsPanel" name="integrationsPanel"/>
+           <widget class="AIConnectionsPanel" name="aiConnectionsPanel"/>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>StepProgressBar</class>
+   <extends>QWidget</extends>
+   <header>stepprogressbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BasicInfoPanel</class>
+   <extends>QWidget</extends>
+   <header>basicinfopanel.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AdditionalFieldsPanel</class>
+   <extends>QWidget</extends>
+   <header>additionalfieldspanel.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DirectoriesPanel</class>
+   <extends>QWidget</extends>
+   <header>directoriespanel.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DatabaseConfigurationPanel</class>
+   <extends>QWidget</extends>
+   <header>databaseconfigurationpanel.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IntegrationsPanel</class>
+   <extends>QWidget</extends>
+   <header>integrationspanel.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AIConnectionsPanel</class>
+   <extends>QWidget</extends>
+   <header>aiconnectionspanel.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

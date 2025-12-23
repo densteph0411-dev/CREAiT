@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<fields>
+	<ModelOrVersion>ModelVersion2</ModelOrVersion>
+	<description />
+	<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/connection/f4f3cf76-0c41-4412-94a3-f961f553d0ac.xml</fileName>
+	<ID>f57dcc15-963b-49e3-824c-d65a2ff9fe96</ID>
+	<type>AIConnection</type>
+	<Key>ABCD34546565</Key>
+	<ToolName>AIConnection2</ToolName>
+	<url />
+	<lastModifiedBy>emoyle</lastModifiedBy>
+	<lastModifiedOn>2025-11-05 09:35:59</lastModifiedOn>
+	<deleted>false</deleted>
+</fields>

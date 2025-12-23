@@ -1,0 +1,24 @@
+# -----------------
+#  Common OS / IDE
+# -----------------
+
+CREAiT/CREAiT.pro.user
+
+# -----------------
+# .vscode directories
+# -----------------
+
+.vscode/
+**/.vscode/
+
+
+# -----------------
+#  Build artifacts
+# -----------------
+CREAiT/build*
+
+CREAiT/Documentation/ExampleProject/testDirectory/CREAiT/credentials.xml
+/CREAiT/.qtcreator
+CREAiT/.qtcreator/CREAiT.pro.user
+CREAiT/.qtcreator/CREAiT.pro.user
+CREAiT/Documentation/ExampleProject/testDirectory/CREAiT/credentials.xml

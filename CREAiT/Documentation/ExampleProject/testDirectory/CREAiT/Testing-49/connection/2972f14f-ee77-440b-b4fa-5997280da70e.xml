@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<fields>
+	<version />
+	<tool />
+	<lastModifiedOn />
+	<userID />
+	<description>This is the description for 2972f14f-ee77-440b-b4fa-5997280da70e</description>
+	<title>AIConnection 3</title>
+	<passWord />
+	<ID>29ba5f3a-eb91-4024-94b4-6f814d7c6d96</ID>
+	<url />
+	<deleted>false</deleted>
+	<key />
+	<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/connection/2972f14f-ee77-440b-b4fa-5997280da70e.xml</fileName>
+	<lastModifiedBy>User Number 3</lastModifiedBy>
+	<type>AIConnection</type>
+	<field_1>field Value 1</field_1>
+	<field_2>field Value 2</field_2>
+	<field_3>field Value 3</field_3>
+	<field_4>field Value 4</field_4>
+</fields>

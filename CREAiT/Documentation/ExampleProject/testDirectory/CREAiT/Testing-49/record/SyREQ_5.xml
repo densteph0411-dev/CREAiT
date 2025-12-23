@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/record/SyREQ_5.xml</fileName>
+		<type>System Requirement</type>
+		<description>This is the description for SyREQ_5</description>
+		<title>System Requirement 4</title>
+		<deleted />
+		<lastModifiedBy>User Number 4</lastModifiedBy>
+		<status>Draft</status>
+		<lastModifiedOn>2025-11-05 09:32:34</lastModifiedOn>
+		<version>1</version>
+		<parent>DIR_4</parent>
+		<treeViewIndex>fileNameOnly_4</treeViewIndex>
+		<field_1>field Value 1</field_1>
+		<field_2>field Value 2</field_2>
+		<field_3>field Value 3</field_3>
+		<field_4>field Value 4</field_4>
+	</fields>
+	<links>
+		<link direction="Down" type="Trace">SyTC_4</link>
+		<link direction="Down" type="Trace">SwREQ_4</link>
+		<link direction="Down" type="Trace">HwREQ_4</link>
+	</links>
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-05 09:32:34">Initial Version</version>
+		<version versionNumber="2" versionDate="2025-11-05 09:32:34">Added Link to SyTC_4</version>
+		<version versionNumber="3" versionDate="2025-11-05 09:32:34">Added Link to SwREQ_4</version>
+		<version versionNumber="4" versionDate="2025-11-05 09:32:34">Added Link to HwREQ_4</version>
+	</versions>
+</record>

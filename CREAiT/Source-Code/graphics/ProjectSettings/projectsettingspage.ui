@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProjectSettingsPage</class>
+ <widget class="QWidget" name="ProjectSettingsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>903</width>
+    <height>563</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#projectSettingsPageContainer {
+    background-color: white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 16px;
+    border-left: 1px solid #34343426;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="handleWidth">
+      <number>0</number>
+     </property>
+     <widget class="ContextSidebar" name="contextSidebar" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>250</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="projectSettingsPageContainer">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <widget class="BasicSettingsPage" name="basicSettingsPage"/>
+      <widget class="IntegrationsPage" name="integrationsPage"/>
+      <widget class="AISettingsPage" name="aiSettingsPage"/>
+      <widget class="UserManagementPage" name="userManagementPage"/>
+      <widget class="BasicSettingsEditPage" name="basicSettingsEditPage"/>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ContextSidebar</class>
+   <extends>QWidget</extends>
+   <header>contextsidebar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BasicSettingsPage</class>
+   <extends>QWidget</extends>
+   <header>basicsettingspage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BasicSettingsEditPage</class>
+   <extends>QWidget</extends>
+   <header>basicsettingseditpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>IntegrationsPage</class>
+   <extends>QWidget</extends>
+   <header>integrationspage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AISettingsPage</class>
+   <extends>QWidget</extends>
+   <header>aisettingspage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>UserManagementPage</class>
+   <extends>QWidget</extends>
+   <header location="global">usermanagementpage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

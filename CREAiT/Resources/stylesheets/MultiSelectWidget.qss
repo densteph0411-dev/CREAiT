@@ -1,0 +1,94 @@
+/* MultiSelectWidget.qss */
+
+#mainContainer {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* Whole widget (round border for the selector button container) */
+QPushButton#SelectorButton {
+    border: 1px solid #c0c0c0;
+    border-radius: 12px; /* Rounded appearance */
+    padding: 6px 8px;
+    background-color: white;
+    text-align: left;
+}
+
+QPushButton#SelectorButton::menu-indicator {
+    image: none;
+}
+
+/* Popup with rounded corners */
+QWidget#PopupWidget {
+    background-color: white;
+    border: 1px solid #a0a0a0;
+    border-radius: 8px;
+}
+
+/* Scroll area style (inside the popup) */
+QScrollArea {
+    border: none;
+}
+
+/* Items inside the popup */
+QCheckBox {
+    spacing: 6px;
+    font-size: 14px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:images/Checkbox.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:images/Checkbox-Check.png);
+}
+
+/* Selected item tag */
+.TagLabel {
+    background: transparent;
+    border: none; /* Removed border */
+    border-radius: 12px;
+    padding: 3px 8px;
+    margin: 2px;
+    font-size: 13px;
+}
+
+/* Close (x) button in each tag */
+QToolButton#CloseButton {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    color: #666;
+    margin-left: 4px;
+}
+
+QToolButton#CloseButton:hover {
+    color: red;
+}
+
+QLabel {
+    background: transparent;
+    border: none;
+}
+
+QFrame {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+}
+
+QScrollArea {
+    border: none;
+}
+
+#scrollContent {
+    border: none;
+    background: white;
+}

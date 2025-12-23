@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProjectPage</class>
+ <widget class="QWidget" name="ProjectPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>757</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: white;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="SideBarWidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>250</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>320</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>344</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#SideBarWidget {
+	border-right: 1px solid #34343426;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 0px;
+}
+
+QPushButton {
+	text-align: left;
+	color: black;
+	background-color: white;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	padding: 10px;
+	spacing: 20px;
+	border-radius: 8px;
+}
+
+QPushButton::focus {
+	color: #22084B;
+	background-color: #EEF4F6;
+}
+
+QLineEdit {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	padding-left: 6px;
+	padding-right: 12px;
+	border: 1px solid #34343426;
+	border-radius: 6px;
+	border-width: 1px;
+	spacing:10px;
+	color: #808080;
+}
+
+QToolButton {
+	padding: 0px;
+    border: none;
+	margin: 0px;
+    background: transparent;
+}
+
+QTreeWidget {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	color: black;
+}
+
+QTreeView {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	color: black;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <property name="leftMargin">
+        <number>16</number>
+       </property>
+       <property name="topMargin">
+        <number>16</number>
+       </property>
+       <property name="rightMargin">
+        <number>16</number>
+       </property>
+       <property name="bottomMargin">
+        <number>16</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="ProjectInfoButton">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>44</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>44</height>
+          </size>
+         </property>
+         <property name="text">
+          <string> Project Info</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../Resources/Resources.qrc">
+           <normaloff>:/images/Project/project_info.svg</normaloff>:/images/Project/project_info.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="SearchBar" native="true">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>36</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>8</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="searchLineEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frame">
+             <bool>false</bool>
+            </property>
+            <property name="placeholderText">
+             <string>Search</string>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="plusRecordButton">
+            <property name="minimumSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../../Resources/Resources.qrc">
+              <normaloff>:/images/plus_button.svg</normaloff>:/images/plus_button.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>36</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="popupMode">
+             <enum>QToolButton::ToolButtonPopupMode::DelayedPopup</enum>
+            </property>
+            <property name="autoRaise">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="ProjectTreeView" name="treeView">
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">    QScrollBar:vertical {
+        background: #F0F0F0;
+        width: 6px;
+        margin: 0px;
+        border-radius: 3px;
+    }
+
+    QScrollBar::handle:vertical {
+        background: #2D1457;
+        min-height: 30px;
+        border-radius: 3px;
+    }
+
+    QScrollBar::add-line:vertical,
+    QScrollBar::sub-line:vertical,
+    QScrollBar::add-page:vertical,
+    QScrollBar::sub-page:vertical {
+        background: none;
+    }
+
+    QScrollBar:horizontal {
+        background: #F0F0F0;
+        width: 6px;
+        margin: 0px;
+    }
+
+    QScrollBar::handle:horizontal {
+        background: #2D1457;
+        min-width: 30px;
+        border-radius: 4px;
+    }
+
+    QScrollBar::add-line:horizontal,
+    QScrollBar::sub-line:horizontal,
+    QScrollBar::add-page:horizontal,
+    QScrollBar::sub-page:horizontal {
+        background: none;
+    }</string>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="dragDropMode">
+          <enum>QAbstractItemView::DragDropMode::DragDrop</enum>
+         </property>
+         <property name="defaultDropAction">
+          <enum>Qt::DropAction::MoveAction</enum>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>false</bool>
+         </property>
+         <property name="headerHidden">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QStackedWidget" name="ViewPart">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>0</height>
+       </size>
+      </property>
+      <widget class="ProjectInfoView" name="projectInfoView">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+      </widget>
+      <widget class="CreateRecordForm" name="createRecordForm"/>
+      <widget class="EditRecordForm" name="editRecordForm"/>
+      <widget class="RecordView" name="recordView"/>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ProjectInfoView</class>
+   <extends>QWidget</extends>
+   <header>ProjectInfoView.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CreateRecordForm</class>
+   <extends>QWidget</extends>
+   <header>createrecordform.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RecordView</class>
+   <extends>QWidget</extends>
+   <header>recordview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>EditRecordForm</class>
+   <extends>QWidget</extends>
+   <header>editrecordform.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ProjectTreeView</class>
+   <extends>QTreeView</extends>
+   <header>projecttreeview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../Resources/Resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>treeView</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>ProjectPage</receiver>
+   <slot>onTreeItemClicked(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>171</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>699</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeView</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>ProjectPage</receiver>
+   <slot>onTreeItemDoubleClicked(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>397</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>699</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onRecordsButtonToggled(bool)</slot>
+  <slot>onRecordsButtonClicked(bool)</slot>
+  <slot>onTreeItemClicked(QModelIndex)</slot>
+  <slot>onTreeItemDoubleClicked(QModelIndex)</slot>
+ </slots>
+</ui>

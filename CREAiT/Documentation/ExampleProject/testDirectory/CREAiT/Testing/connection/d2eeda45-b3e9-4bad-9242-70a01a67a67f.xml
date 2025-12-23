@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<fields>
+	<lastModifiedOn>2025-11-18 03:51:44</lastModifiedOn>
+	<deleted>false</deleted>
+	<description />
+	<ToolName>OpenAI</ToolName>
+	<url>123</url>
+	<type>AIConnection</type>
+	<Key />
+	<ModelOrVersion>1.0.1</ModelOrVersion>
+	<fileName>C:/svnCheckouts/Systaero/Software/CREAiT/CREAiT-Qt-GUI/CREAiT/Documentation/ExampleProject/testDirectory/CREAiT/Testing/connection/d2eeda45-b3e9-4bad-9242-70a01a67a67f.xml</fileName>
+	<ID>d2eeda45-b3e9-4bad-9242-70a01a67a67f</ID>
+	<lastModifiedBy>emoyle</lastModifiedBy>
+</fields>

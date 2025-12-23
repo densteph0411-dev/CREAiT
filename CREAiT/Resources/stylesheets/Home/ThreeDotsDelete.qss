@@ -1,0 +1,11 @@
+QWidget {
+    background-color: white;
+}
+
+QToolButton {
+    background-color: transparent;
+    color: #B82132;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}

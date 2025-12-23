@@ -1,0 +1,36 @@
+#container {
+    border: 1px solid rgba(52, 52, 52, 0.15);
+    border-radius: 10px;
+}
+
+#backgroundImage {
+    background-color: #EEF4F6;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#documentType {
+    background-color: transparent;
+}
+
+#toolButton {
+    background-color: transparent;
+}
+
+#documentTitle {
+    font-family: Open Sans;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    font-size: 16px;
+    color: black;
+}
+
+#date, #owner {
+    font-family: Open Sans;
+    font-weight: 550;
+    line-height: 24px;
+    letter-spacing: 0%;
+    font-size: 16px;
+    color: #4D4D4D;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<fields>
+	<version />
+	<tool />
+	<lastModifiedOn />
+	<userID />
+	<description>This is the description for a2de2e97-1dfb-446f-a82e-d2c58b3ce9f9</description>
+	<title>AIConnection 6</title>
+	<passWord />
+	<ID>a785135e-9294-4ad3-8a53-648f88ea99bd</ID>
+	<url />
+	<deleted>false</deleted>
+	<key />
+	<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/connection/a2de2e97-1dfb-446f-a82e-d2c58b3ce9f9.xml</fileName>
+	<lastModifiedBy>User Number 6</lastModifiedBy>
+	<type>AIConnection</type>
+	<field_1>field Value 1</field_1>
+	<field_2>field Value 2</field_2>
+	<field_3>field Value 3</field_3>
+	<field_4>field Value 4</field_4>
+</fields>

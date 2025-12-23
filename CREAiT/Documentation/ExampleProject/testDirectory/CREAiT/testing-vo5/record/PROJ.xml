@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<lastModifiedBy />
+		<fileName />
+		<type>project</type>
+		<parent />
+		<deleted />
+		<description />
+		<status>Draft</status>
+		<title>testing-vo5</title>
+		<version>1</version>
+		<treeViewIndex />
+		<lastModifiedOn>2025-11-12 02:33:03</lastModifiedOn>
+	</fields>
+	<links />
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-12 02:33:03">Initial Version</version>
+	</versions>
+</record>

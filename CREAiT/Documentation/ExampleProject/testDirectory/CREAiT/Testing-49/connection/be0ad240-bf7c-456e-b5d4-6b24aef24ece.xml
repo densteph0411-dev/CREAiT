@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<fields>
+	<version />
+	<tool />
+	<lastModifiedOn />
+	<userID />
+	<description>This is the description for be0ad240-bf7c-456e-b5d4-6b24aef24ece</description>
+	<title>integration 12</title>
+	<passWord />
+	<ID>bf5831e4-c48c-4243-b923-7346b43da711</ID>
+	<url />
+	<deleted>false</deleted>
+	<key />
+	<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/connection/be0ad240-bf7c-456e-b5d4-6b24aef24ece.xml</fileName>
+	<lastModifiedBy>User Number 12</lastModifiedBy>
+	<type>integration</type>
+	<field_1>field Value 1</field_1>
+	<field_2>field Value 2</field_2>
+	<field_3>field Value 3</field_3>
+	<field_4>field Value 4</field_4>
+</fields>

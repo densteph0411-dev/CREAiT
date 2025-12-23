@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<fields>
+	<deleted>true</deleted>
+	<durationType>Seconds</durationType>
+	<lastModifiedBy />
+	<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-8/automation/e05b8e05-cd75-4620-88b9-d059ea4a03ef.xml</fileName>
+	<type>automation</type>
+	<description />
+	<lastModifiedOn>2025-11-12 01:38:00</lastModifiedOn>
+	<exampleInput_1 />
+	<title>21</title>
+	<status />
+	<version>2.0.6.13</version>
+	<duration />
+	<prompt />
+	<AIModel>OpenAI | gpt-turbo-3.6</AIModel>
+	<triggerType />
+</fields>

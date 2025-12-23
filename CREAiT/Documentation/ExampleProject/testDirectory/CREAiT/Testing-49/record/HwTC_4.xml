@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/record/HwTC_4.xml</fileName>
+		<type>Hardware Test Case</type>
+		<description>This is the description for HwTC_4</description>
+		<title>Hardware Test Case 4</title>
+		<deleted />
+		<lastModifiedBy>User Number 4</lastModifiedBy>
+		<status>Draft</status>
+		<lastModifiedOn>2025-11-05 09:32:34</lastModifiedOn>
+		<version>1</version>
+		<parent>DIR_4</parent>
+		<treeViewIndex>SwREQ_4</treeViewIndex>
+		<field_1>field Value 1</field_1>
+		<field_2>field Value 2</field_2>
+		<field_3>field Value 3</field_3>
+		<field_4>field Value 4</field_4>
+	</fields>
+	<links>
+		<link direction="Up" type="Trace">HwREQ_4</link>
+		<link direction="Down" type="Trace">HwTP_4</link>
+	</links>
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-05 09:32:34">Initial Version</version>
+		<version versionNumber="2" versionDate="2025-11-05 09:32:34">Added Link to HwREQ_4</version>
+		<version versionNumber="3" versionDate="2025-11-05 09:32:34">Added Link to HwTP_4</version>
+	</versions>
+</record>

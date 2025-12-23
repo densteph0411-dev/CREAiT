@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AIChatBotPopup</class>
+ <widget class="QWidget" name="AIChatBotPopup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>514</width>
+    <height>890</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>514</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#AIChatBotPopup {
+	background: white;
+	border-radius: 12px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0,1">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="header" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>52</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>52</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#header {
+	border-radius: 0px;
+	border-bottom: 1px solid #34343426;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>18</number>
+      </property>
+      <property name="rightMargin">
+       <number>18</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="chatBotTitleLabel">
+        <property name="styleSheet">
+         <string notr="true">font-family: Open Sans;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0%;
+text-align: center;
+color: #1A1A1A;</string>
+        </property>
+        <property name="text">
+         <string>CREAiT Chat Bot</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="refreshButton">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/images/ProjectSettings/refresh.svg</normaloff>:/images/ProjectSettings/refresh.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="closeButton">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/images/Project/close-toolbox.svg</normaloff>:/images/Project/close-toolbox.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="chatContainer" native="true">
+     <property name="styleSheet">
+      <string notr="true">border-radius: 0px;</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QScrollArea" name="chatScrollArea">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>492</width>
+           <height>717</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <widget class="QWidget" name="chatbotHelloContainer" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item alignment="Qt::AlignmentFlag::AlignHCenter">
+              <widget class="QLabel" name="aiChatBotIcon">
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap>:/images/Project/chatbot.svg</pixmap>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignmentFlag::AlignHCenter">
+              <widget class="QLabel" name="helloQuestionLabel">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+	color: #1A1A1A;
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 30px;
+	letter-spacing: 0%;
+	text-align: center;
+}</string>
+               </property>
+               <property name="text">
+                <string>How can i assist you today?</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignmentFlag::AlignHCenter">
+              <widget class="QLabel" name="helloGuideLabel">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+	font-family: Open Sans;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: #4D4D4D;
+}</string>
+               </property>
+               <property name="text">
+                <string>Tap below suggestions or write your own query.</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="chatInputPart" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#chatInputPart {
+	border-radius: 0px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>22</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>22</number>
+      </property>
+      <property name="bottomMargin">
+       <number>22</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="suggestionGroup" native="true">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="queryGroup" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>54</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>54</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#queryGroup {
+	background: #F3EDFD;
+	border-radius: 27px;
+}
+
+QLineEdit {
+	font-family: Open Sans;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	color: #4D4D4D;
+	background: transparent;
+	border: none;
+}</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="topMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <property name="bottomMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="attachmentButton">
+           <property name="minimumSize">
+            <size>
+             <width>38</width>
+             <height>38</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>38</width>
+             <height>38</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background: transparent;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>:/images/Project/ai-chat-attachment.svg</normaloff>:/images/Project/ai-chat-attachment.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>38</width>
+             <height>38</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="questionInput">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>Ask question here.</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="sendButton">
+           <property name="minimumSize">
+            <size>
+             <width>38</width>
+             <height>38</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>38</width>
+             <height>38</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background: transparent;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>:/images/Project/ai-chat-send-msg.svg</normaloff>:/images/Project/ai-chat-send-msg.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>34</width>
+             <height>34</height>
+            </size>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>sendButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AIChatBotPopup</receiver>
+   <slot>onSendClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>464</x>
+     <y>840</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>444</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>questionInput</sender>
+   <signal>returnPressed()</signal>
+   <receiver>AIChatBotPopup</receiver>
+   <slot>onSendClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>256</x>
+     <y>840</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>444</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>closeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AIChatBotPopup</receiver>
+   <slot>onCloseToolClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>479</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>444</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>refreshButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AIChatBotPopup</receiver>
+   <slot>onRefreshToolClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>437</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>444</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onSendClicked()</slot>
+  <slot>onCloseToolClicked()</slot>
+  <slot>onRefreshToolClicked()</slot>
+ </slots>
+</ui>

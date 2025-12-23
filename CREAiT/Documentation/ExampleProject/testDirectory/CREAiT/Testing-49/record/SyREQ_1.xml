@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/record/SyREQ_1.xml</fileName>
+		<type>System Requirement</type>
+		<description>first item in the index</description>
+		<title>System Requirement 1</title>
+		<deleted>true</deleted>
+		<lastModifiedBy />
+		<status>Draft</status>
+		<lastModifiedOn>2025-11-05 09:32:32</lastModifiedOn>
+		<version>1</version>
+		<parent>PROJ</parent>
+		<treeViewIndex />
+	</fields>
+	<links />
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-05 09:32:32">Initial Version</version>
+	</versions>
+</record>

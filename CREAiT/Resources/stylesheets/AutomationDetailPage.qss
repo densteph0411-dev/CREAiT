@@ -1,0 +1,44 @@
+QTextBrowser {
+    border: none; /* Remove border */
+    background-color: white;
+    padding: 8px;
+    font-family: Open Sans;
+    font-size: 18px;
+}
+
+/* Scrollbar Customization */
+QScrollBar:vertical {
+    background: #F0F0F0;
+    width: 6px;
+    margin: 0px;
+    border-radius: 3px;
+}
+QScrollBar::handle:vertical {
+    background: #2D1457;
+    min-height: 30px;
+    border-radius: 3px;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical,
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background: #F0F0F0;
+    height: 6px;
+    margin: 0px;
+    border-radius: 3px;
+}
+QScrollBar::handle:horizontal {
+    background: #2D1457;
+    min-width: 30px;
+    border-radius: 3px;
+}
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal,
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: none;
+}

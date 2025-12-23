@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>documentcard</class>
+ <widget class="QWidget" name="documentcard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>322</width>
+    <height>296</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>322</width>
+    <height>296</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>322</width>
+    <height>296</height>
+   </size>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#container {
+    border: 1px solid rgba(52, 52, 52, 0.15);
+    border-radius: 10px;
+}
+
+#backgroundImage {
+    background-color: #EEF4F6;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#documentType {
+    background-color: transparent;
+}
+
+#toolButton {
+    background-color: transparent;
+}
+
+#documentTitle {
+    font-family: Open Sans;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    font-size: 16px;
+    color: black;
+}
+
+#date, #owner {
+    font-family: Open Sans;
+    font-weight: 550;
+    line-height: 24px;
+    letter-spacing: 0%;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+#menuButton {
+	background: transparent;
+	border: none;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="container" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QVBoxLayout" name="_2">
+      <property name="spacing">
+       <number>12</number>
+      </property>
+      <property name="leftMargin">
+       <number>12</number>
+      </property>
+      <property name="topMargin">
+       <number>12</number>
+      </property>
+      <property name="rightMargin">
+       <number>12</number>
+      </property>
+      <property name="bottomMargin">
+       <number>12</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="backgroundImage" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <widget class="QLabel" name="documentType">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>39</y>
+           <width>201</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="menuButton">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>10</y>
+           <width>24</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="icon">
+          <iconset resource="../../../Resources/Resources.qrc">
+           <normaloff>:/images/Automations/cell_header_menu.png</normaloff>:/images/Automations/cell_header_menu.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="documentTitle">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>IEEE RFC Compliance Standards</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="dateOwner">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="timeIcon">
+          <property name="pixmap">
+           <pixmap resource="../../../Resources/Resources.qrc">:/images/Documents/dateTime.svg</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="date">
+          <property name="text">
+           <string>date</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="ownerIcon">
+          <property name="pixmap">
+           <pixmap resource="../../../Resources/Resources.qrc">:/images/Documents/user.svg</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="owner">
+          <property name="text">
+           <string>owner</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../Resources/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<lastModifiedBy />
+		<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/213/record/PROJ.xml</fileName>
+		<type>project</type>
+		<parent />
+		<deleted />
+		<description />
+		<status>Draft</status>
+		<title>213</title>
+		<version>1</version>
+		<treeViewIndex />
+		<lastModifiedOn>2025-11-18 01:24:04</lastModifiedOn>
+	</fields>
+	<links />
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-18 01:24:04">Initial Version</version>
+	</versions>
+</record>

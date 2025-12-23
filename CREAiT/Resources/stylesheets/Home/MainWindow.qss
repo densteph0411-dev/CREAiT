@@ -1,0 +1,76 @@
+QWidget {
+    background-color: #EEF4F6;
+}
+
+QMainWindow {
+    background: transparent;  /* Required for shadow effect in code */
+}
+
+QMainWindow > QWidget#centralwidget {
+    background-color: #EEF4F6;
+    border: 1px solid #D1D1D1;
+}
+
+QMainWindow:focus > QWidget#centralwidget {
+    border: 1px solid #D1D1D1;
+}
+
+QMainWindow[windowState="maximized"] > QWidget#centralwidget {
+    border: none;
+}
+
+QMainWindow[windowActive="false"] > QWidget#centralwidget {
+    border: 1px solid #E0E0E0;
+}
+
+QMainWindow[windowActive="true"] > QWidget#centralwidget {
+    border: 1px solid #B0B0B0;
+}
+
+#stackedWidget {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+QScrollBar:vertical {
+    background: #F0F0F0;
+    width: 6px;
+    margin: 0px;
+    border-radius: 3px;
+}
+
+QScrollBar::handle:vertical {
+    background: #2D1457;
+    min-height: 30px;
+    border-radius: 3px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical,
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background: #F0F0F0;
+    height: 6px;
+    margin: 0px;
+    border-radius: 3px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #2D1457;
+    min-width: 30px;
+    border-radius: 3px;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal,
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: none;
+}
+

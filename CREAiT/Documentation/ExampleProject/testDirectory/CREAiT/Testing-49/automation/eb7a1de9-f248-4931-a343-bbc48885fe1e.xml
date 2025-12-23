@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<fields>
+	<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/automation/eb7a1de9-f248-4931-a343-bbc48885fe1e.xml</fileName>
+	<title>training 8</title>
+	<description>This is the description for eb7a1de9-f248-4931-a343-bbc48885fe1e</description>
+	<status />
+	<lastModifiedBy>User Number 8</lastModifiedBy>
+	<type>training</type>
+	<deleted>false</deleted>
+	<lastModifiedOn />
+	<version />
+	<AIModel />
+	<prompt />
+	<triggerType />
+	<field_1>field Value 1</field_1>
+	<durationType />
+	<duration />
+	<exampleInput_1 />
+	<field_2>field Value 2</field_2>
+	<field_3>field Value 3</field_3>
+	<field_4>field Value 4</field_4>
+</fields>

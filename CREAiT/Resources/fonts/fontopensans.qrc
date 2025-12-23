@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/fontopensans">
+        <file>open-sans.regular.ttf</file>
+        <file>OpenSans_Condensed-Bold.ttf</file>
+        <file>OpenSans_Condensed-BoldItalic.ttf</file>
+        <file>OpenSans_Condensed-ExtraBold.ttf</file>
+        <file>OpenSans_Condensed-ExtraBoldItalic.ttf</file>
+        <file>OpenSans_Condensed-Italic.ttf</file>
+        <file>OpenSans_Condensed-Light.ttf</file>
+        <file>OpenSans_Condensed-LightItalic.ttf</file>
+        <file>OpenSans_Condensed-Medium.ttf</file>
+        <file>OpenSans_Condensed-MediumItalic.ttf</file>
+        <file>OpenSans_Condensed-Regular.ttf</file>
+        <file>OpenSans_Condensed-SemiBold.ttf</file>
+        <file>OpenSans_Condensed-SemiBoldItalic.ttf</file>
+        <file>OpenSans_SemiCondensed-Bold.ttf</file>
+        <file>OpenSans_SemiCondensed-BoldItalic.ttf</file>
+        <file>OpenSans_SemiCondensed-ExtraBold.ttf</file>
+        <file>OpenSans_SemiCondensed-ExtraBoldItalic.ttf</file>
+        <file>OpenSans_SemiCondensed-Italic.ttf</file>
+        <file>OpenSans_SemiCondensed-Light.ttf</file>
+        <file>OpenSans_SemiCondensed-LightItalic.ttf</file>
+        <file>OpenSans_SemiCondensed-Medium.ttf</file>
+        <file>OpenSans_SemiCondensed-MediumItalic.ttf</file>
+        <file>OpenSans_SemiCondensed-Regular.ttf</file>
+        <file>OpenSans_SemiCondensed-SemiBold.ttf</file>
+        <file>OpenSans_SemiCondensed-SemiBoldItalic.ttf</file>
+        <file>OpenSans-Bold.ttf</file>
+        <file>OpenSans-BoldItalic.ttf</file>
+        <file>OpenSans-ExtraBold.ttf</file>
+        <file>OpenSans-ExtraBoldItalic.ttf</file>
+        <file>OpenSans-Italic.ttf</file>
+        <file>OpenSans-Light.ttf</file>
+        <file>OpenSans-LightItalic.ttf</file>
+        <file>OpenSans-Medium.ttf</file>
+        <file>OpenSans-MediumItalic.ttf</file>
+        <file>OpenSans-Regular.ttf</file>
+        <file>OpenSans-SemiBold.ttf</file>
+        <file>OpenSans-SemiBoldItalic.ttf</file>
+    </qresource>
+</RCC>

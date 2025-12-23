@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-49/record/SyTP_11.xml</fileName>
+		<type>System Test Procedure</type>
+		<description>This is the description for SyTP_11</description>
+		<title>System Test Procedure 11</title>
+		<deleted />
+		<lastModifiedBy>User Number 11</lastModifiedBy>
+		<status>Draft</status>
+		<lastModifiedOn>2025-11-05 09:32:39</lastModifiedOn>
+		<version>1</version>
+		<parent>DIR_11</parent>
+		<treeViewIndex>HwTC_11</treeViewIndex>
+		<field_1>field Value 1</field_1>
+		<field_2>field Value 2</field_2>
+		<field_3>field Value 3</field_3>
+		<field_4>field Value 4</field_4>
+	</fields>
+	<links>
+		<link direction="Up" type="Trace">SyTC_11</link>
+	</links>
+	<versions>
+		<version versionNumber="1" versionDate="2025-11-05 09:32:39">Initial Version</version>
+		<version versionNumber="2" versionDate="2025-11-05 09:32:39">Added Link to SyTC_11</version>
+	</versions>
+</record>

@@ -1,0 +1,35 @@
+#iconLabel {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+QLabel {
+    border: none;
+    background: transparent;
+    padding: 0;
+    font-size: 14px;
+    color: black;
+}
+
+QToolButton {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+#itemContainer[active="true"] {
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid rgba(52, 52, 52, 0.15);
+}
+
+#itemContainer[active="false"] {
+    background-color: transparent;
+}
+
+#itemContainer[active="false"]:hover {
+    background-color: #D6ECFF;
+    border-radius: 6px;
+    border: 1px solid rgba(52, 52, 52, 0.15);
+}
