@@ -12,6 +12,10 @@ DatabaseConfigurationPanel::DatabaseConfigurationPanel(QWidget *parent)
 
     connect(backButton, &QPushButton::clicked, this, &DatabaseConfigurationPanel::clickedBackButton);
     connect(nextButton, &QPushButton::clicked, this, &DatabaseConfigurationPanel::clickedNextButton);
+
+    connect(toolNameSelect, &QComboBox::currentTextChanged,this, [this](const QString &) { updateUiForTool(); });
+
+    updateUiForTool();
 }
 
 DatabaseConfigurationPanel::~DatabaseConfigurationPanel()
@@ -120,5 +124,24 @@ void DatabaseConfigurationPanel::showEvent(QShowEvent *event)
     if (!storedPassword.isEmpty()) {
         passwordEdit->setText(storedPassword);
     }
+
 }
+
+void DatabaseConfigurationPanel::updateUiForTool()
+{
+    const QString tool = toolNameSelect->currentText().trimmed();
+    const bool isLocal = (tool.compare("Local", Qt::CaseInsensitive) == 0);
+
+    CMUrlContainer->setVisible(!isLocal);
+    UsernameContainer->setVisible(!isLocal);
+    PasswordContainer->setVisible(!isLocal);
+    label_9->setVisible(!isLocal); // "Credentials"
+
+    if (isLocal) {
+        cmUrlEdit->clear();
+        usernameEdit_2->clear();
+        passwordEdit->clear();
+    }
+}
+
 

@@ -2,6 +2,7 @@
 #define DATABASECONFIGURATIONPANEL_H
 
 #include <QWidget>
+#include <QShowEvent>
 #include "ui_databaseconfigurationpanel.h"
 
 
@@ -29,6 +30,8 @@ protected:
 private:
     void clickedBackButton();
     void clickedNextButton();
+
+    void updateUiForTool();
 };
 
 #endif // DATABASECONFIGURATIONPANEL_H

@@ -521,4 +521,14 @@
 			<Associates />
 		</fields>
 	</projectInfo>
+	<projectInfo name="23">
+		<fields>
+			<fileName>C:/Users/User/Downloads/requirementTool/requirementTool/CREAiT/Documentation/ExampleProject/testDirectory/CREAiT/linkType.xml</fileName>
+			<Associates />
+			<fileNameOnly>linkTypes.xml</fileNameOnly>
+			<Satisfies />
+			<Traces />
+			<Allocates />
+		</fields>
+	</projectInfo>
 </linkType>

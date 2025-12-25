@@ -15,18 +15,54 @@ DirectorySelectItem::~DirectorySelectItem()
 
 }
 
-void DirectorySelectItem::clickedDirectorySelectButton() {
-    QString dir = QFileDialog::getExistingDirectory(
+// void DirectorySelectItem::clickedDirectorySelectButton() {
+//     QString dir = QFileDialog::getExistingDirectory(
+//         this,
+//         tr("Select Directory"),
+//         "",
+//         QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks
+//         );
+
+//     if (!dir.isEmpty()) {
+//         directoryPathEdit->setText(dir); // Example
+//     }
+// }
+
+void DirectorySelectItem::clickedDirectorySelectButton()
+{
+    QString startDir = directoryPathEdit->text().trimmed();
+
+    // If empty, use fallback (optional: stored path)
+    if (startDir.isEmpty()) {
+        startDir = QDir::homePath();
+    }
+
+    // Normalize path
+    startDir = QDir::cleanPath(startDir);
+
+    // If it's a file path, use its parent folder
+    QFileInfo fi(startDir);
+    if (fi.exists() && fi.isFile()) {
+        startDir = fi.absolutePath();
+    }
+
+    // If directory doesn't exist, fallback
+    if (!QDir(startDir).exists()) {
+        startDir = QDir::homePath();
+    }
+
+    QString selectedDir = QFileDialog::getExistingDirectory(
         this,
         tr("Select Directory"),
-        "",
-        QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks
-        );
+        startDir,
+        QFileDialog::ShowDirsOnly
+    );
 
-    if (!dir.isEmpty()) {
-        directoryPathEdit->setText(dir); // Example
+    if (!selectedDir.isEmpty()) {
+        directoryPathEdit->setText(QDir::cleanPath(selectedDir));
     }
 }
+
 
 void DirectorySelectItem::reset() {
     directoryPathEdit->clear();

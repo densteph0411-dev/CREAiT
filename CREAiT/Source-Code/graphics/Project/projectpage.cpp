@@ -16,6 +16,9 @@
 #include "Presenter/recorddatapresenter.h"
 #include <Presenter/projectdatapresenter.h>
 
+#include <QPainter>
+#include <QFile>
+
 #define TREEITEM_RECORD_ID_ROLE  Qt::UserRole
 #define TREEITEM_PARENT_ID_ROLE  Qt::UserRole + 1
 
@@ -239,28 +242,71 @@ void ProjectPage::loadRecordsForProject()
     ui->projectInfoView->loadProjectInfoData();
 }
 
-QIcon ProjectPage::createColoredSvgIcon(const QString &svgPath, const QString &color, const QSize &size)
+// QIcon ProjectPage::createColoredSvgIcon(const QString &svgPath, const QString &color, const QSize &size)
+// {
+//     QFile file(svgPath);
+//     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+//         return QIcon();
+
+//     QString contents = file.readAll();
+//     file.close();
+
+//     // Replace the fill color (adjust to match your SVG's color usage)
+//     contents.replace("#000000", color, Qt::CaseInsensitive);
+
+//     // Load into QSvgRenderer from QByteArray
+//     QByteArray svgData = contents.toUtf8();
+//     QSvgRenderer renderer(svgData);
+
+//     QPixmap pixmap(size);
+//     pixmap.fill(Qt::transparent);
+//     QPainter painter(&pixmap);
+//     renderer.render(&painter);
+
+//     return QIcon(pixmap);
+// }
+
+QIcon ProjectPage::createColoredSvgIcon(const QString &svgPath,
+                                        const QString &color,
+                                        const QSize &size)
 {
     QFile file(svgPath);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return QIcon();
 
-    QString contents = file.readAll();
+    QString contents = QString::fromUtf8(file.readAll());
     file.close();
 
-    // Replace the fill color (adjust to match your SVG's color usage)
     contents.replace("#000000", color, Qt::CaseInsensitive);
 
-    // Load into QSvgRenderer from QByteArray
-    QByteArray svgData = contents.toUtf8();
-    QSvgRenderer renderer(svgData);
+    QSvgRenderer renderer(contents.toUtf8());
+    if (!renderer.isValid())
+        return QIcon();
 
-    QPixmap pixmap(size);
-    pixmap.fill(Qt::transparent);
-    QPainter painter(&pixmap);
-    renderer.render(&painter);
+    qreal dpr = 1.0;
+    if (QGuiApplication::primaryScreen())
+        dpr = QGuiApplication::primaryScreen()->devicePixelRatio();
+    if (dpr < 1.0) dpr = 1.0;
 
-    return QIcon(pixmap);
+    auto renderOne = [&](QSize logical)->QPixmap {
+        QSize px(qMax(1, int(logical.width() * dpr)),
+                 qMax(1, int(logical.height() * dpr)));
+        QPixmap pm(px);
+        pm.fill(Qt::transparent);
+        pm.setDevicePixelRatio(dpr);
+
+        QPainter p(&pm);
+        p.setRenderHint(QPainter::Antialiasing, true);
+        p.setRenderHint(QPainter::SmoothPixmapTransform, true);
+        renderer.render(&p, QRect(QPoint(0,0), logical)); // logical rect
+        return pm;
+    };QIcon icon;
+    icon.addPixmap(renderOne(size));
+    icon.addPixmap(renderOne(QSize(20,20)));
+    icon.addPixmap(renderOne(QSize(24,24)));
+    icon.addPixmap(renderOne(QSize(32,32)));
+    icon.addPixmap(renderOne(QSize(48,48)));
+    return icon;
 }
 
 QStandardItem* ProjectPage::createTreeItem(Record record)
@@ -290,8 +336,9 @@ QStandardItem* ProjectPage::createTreeItem(Record record)
         }
     }
 
-    // QIcon icon = createColoredSvgIcon(iconPath, iconColor, QSize(16,16));
-    item->setIcon(QIcon(iconPath));
+    QIcon icon = createColoredSvgIcon(iconPath, iconColor, QSize(16,16));
+
+    item->setIcon(QIcon(icon));
 
     return item;
 }
@@ -645,8 +692,8 @@ void ProjectPage::onRecordUpdated(QString recID)
             }
         }
 
-        // QIcon icon = createColoredSvgIcon(iconPath, iconColor, QSize(16, 16));
-        item->setIcon(QIcon(iconPath));
+        QIcon icon = createColoredSvgIcon(iconPath, iconColor, QSize(16, 16));
+        item->setIcon(QIcon(icon));
     }
 }
 

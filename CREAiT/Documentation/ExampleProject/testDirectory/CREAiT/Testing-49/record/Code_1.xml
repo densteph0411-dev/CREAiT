@@ -7,7 +7,7 @@
 		<title>Code 1</title>
 		<deleted />
 		<lastModifiedBy>User Number 1</lastModifiedBy>
-		<status>Draft</status>
+		<status>In Review</status>
 		<lastModifiedOn>2025-11-05 09:32:32</lastModifiedOn>
 		<version>1</version>
 		<parent>DIR_1</parent>
@@ -16,6 +16,7 @@
 		<field_2>field Value 2</field_2>
 		<field_3>field Value 3</field_3>
 		<field_4>field Value 4</field_4>
+		<AICreated>true</AICreated>
 	</fields>
 	<links>
 		<link direction="Up" type="Trace">SwTP_1</link>

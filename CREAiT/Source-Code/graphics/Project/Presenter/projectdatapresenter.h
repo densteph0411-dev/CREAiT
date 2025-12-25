@@ -1,6 +1,8 @@
 #ifndef PROJECTDATAPRESENTER_H
 #define PROJECTDATAPRESENTER_H
 
+// #include "Presenter/projectdatapresenter.h"
+
 #include "Presenter/recorddatapresenter.h"
 #include <QString>
 #include <projecttreemodel.h>
@@ -41,6 +43,8 @@ public:
     QList<Record> fetchAllRecordList();
     QList<Record> fetchChildRecordList(QString parent);
     QList<Record> searchRecordsByKeyword(QString keyword);
+
+    QList<Record> fetchAllActiveRecordList() const;
 
     QString createRecord(const QString recordType,
                                 const QString title,

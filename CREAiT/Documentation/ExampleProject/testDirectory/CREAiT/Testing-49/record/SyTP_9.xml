@@ -16,6 +16,7 @@
 		<field_2>field Value 2</field_2>
 		<field_3>field Value 3</field_3>
 		<field_4>field Value 4</field_4>
+		<11></11>
 	</fields>
 	<links>
 		<link direction="Up" type="Trace">SyTC_9</link>

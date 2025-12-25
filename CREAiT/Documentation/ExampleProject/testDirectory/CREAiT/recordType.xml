@@ -1145,4 +1145,10 @@
 			<Code>Code</Code>
 		</fields>
 	</projectInfo>
+	<projectInfo name="23">
+		<fields>
+			<DIR currentID="3">Directory</DIR>
+			<HwTP>Hardware Test Procedure</HwTP>
+		</fields>
+	</projectInfo>
 </recordType>

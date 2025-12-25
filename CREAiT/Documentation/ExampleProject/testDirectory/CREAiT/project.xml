@@ -677,4 +677,21 @@
 			<IDPrefix />
 		</fields>
 	</projectInfo>
+	<projectInfo name="23">
+		<fields>
+			<AIConnectionID />
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>23</projectName>
+			<type>mysql</type>
+			<description>23</description>
+			<dataBaseName />
+			<CMURL>23</CMURL>
+			<IntegrationID />
+			<dataBaseURL />
+			<dataBaseUrl />
+			<toolName>CREAiT</toolName>
+			<IDPrefix>23</IDPrefix>
+			<credentialsFileName>credentials.xml</credentialsFileName>
+		</fields>
+	</projectInfo>
 </project>

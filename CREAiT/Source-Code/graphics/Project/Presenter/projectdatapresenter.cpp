@@ -310,26 +310,62 @@ void ProjectDataPresenter::moveRecord(const QString& recID, const QString& paren
     }
 }
 
+// RecordCounts ProjectDataPresenter::countsForType(const QString& type)
+// {
+//     RecordCounts counts;
+//     counts.reviewed = 0;
+//     counts.drafts = 0;
+//     counts.inReview = 0;
+
+//     for (int i=0; i<recordList.count(); i++)
+//     {
+//         if (recordList[i].type != type)
+//             continue;
+
+//         if (recordList[i].status == "Draft") {
+//             counts.drafts++;
+//         } else if (recordList[i].status == "Review") {
+//             counts.inReview++;
+//         } else if (recordList[i].status == "Reviewed") {
+//             counts.reviewed++;
+//         }
+//     }
+
+//     return counts;
+// }
+
+static QString norm(QString s) { return s.trimmed().toLower(); }
+
 RecordCounts ProjectDataPresenter::countsForType(const QString& type)
 {
-    RecordCounts counts;
-    counts.reviewed = 0;
-    counts.drafts = 0;
-    counts.inReview = 0;
+    RecordCounts counts{0,0,0};
 
-    for (int i=0; i<recordList.count(); i++)
+    for (int i = 0; i < recordList.count(); ++i)
     {
-        if (recordList[i].type != type)
-            continue;
+        if (recordList[i].deleted == "true") continue;  // ✅ ignore deleted
+        if (recordList[i].type != type) continue;
 
-        if (recordList[i].status == "Draft") {
+        const QString s = norm(recordList[i].status);
+
+        if (s == "draft") {
             counts.drafts++;
-        } else if (recordList[i].status == "Review") {
+        } else if (s == "review") {
+            counts.reviewed++;          // ✅ Review means Reviewed bucket
+        } else if (s == "in review") {
             counts.inReview++;
-        } else if (recordList[i].status == "Reviewed") {
-            counts.reviewed++;
         }
     }
 
     return counts;
 }
+
+QList<Record> ProjectDataPresenter::fetchAllActiveRecordList() const
+{
+    QList<Record> active;
+    for (const auto &r : recordList) {
+        if (r.deleted == "true") continue;
+        active.append(r);
+    }
+    return active;
+}
+
