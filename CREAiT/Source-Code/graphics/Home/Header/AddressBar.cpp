@@ -24,22 +24,30 @@ void AddressBar::addItem(const QIcon& icon, const QString& label, bool closable)
         separators.append(separator);
     }
 
-    int index = nextId++;
-    auto* item = new AddressBarItem(index, icon, label, closable, this);
-    mainLayout->addWidget(item);
-    addressBarItems.insert(index, item);
+    int existingId = findIdByLabel(label);
 
-    connect(item, &AddressBarItem::clicked, this, [this](int id, const QString& name) {
-        setActiveIndex(id);
-        emit activatedItem(id, name);
-    });
+    qDebug() << "existingId" << existingId;
 
-    connect(item, &AddressBarItem::requestedClose, this, [this](int id, const QString& name) {
-        emit closedItem(id, name);
-        closeItem(id);
-    });
+    if (existingId == -1) {
+        int index = nextId++;
+        auto* item = new AddressBarItem(index, icon, label, closable, this);
+        mainLayout->addWidget(item);
+        addressBarItems.insert(index, item);
 
-    setActiveIndex(index);
+        connect(item, &AddressBarItem::clicked, this, [this](int id, const QString& name) {
+            setActiveIndex(id);
+            emit activatedItem(id, name);
+        });
+
+        connect(item, &AddressBarItem::requestedClose, this, [this](int id, const QString& name) {
+            emit closedItem(id, name);
+            closeItem(id);
+        });
+
+        setActiveIndex(index);
+    }
+    else setActiveIndex(existingId);
+
 }
 
 void AddressBar::addStrech() {
@@ -76,3 +84,21 @@ void AddressBar::closeItem(int index) {
         setActiveIndex(it.key());
     }
 }
+
+int AddressBar::findIdByLabel(const QString& label) const
+{
+    for (auto it = addressBarItems.constBegin(); it != addressBarItems.constEnd(); ++it) {
+        AddressBarItem* item = it.value();
+
+        if (!item) continue;
+
+        if (item->label() == label) {
+            qDebug() << "key" << it.key();
+            return it.key();
+        }
+    }
+    return -1;
+}
+
+
+

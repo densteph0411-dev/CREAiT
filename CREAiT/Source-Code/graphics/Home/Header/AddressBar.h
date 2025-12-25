@@ -28,6 +28,8 @@ public:
 
     void addStrech();
 
+    int findIdByLabel(const QString& label) const;
+
 signals:
     void activatedItem(int index, const QString& name);
     void closedItem(int index, const QString& name);

@@ -255,6 +255,7 @@ void MainWindow::viewProject(const QString& projectsPath, const QString& project
 
             QFutureWatcher<void> *watcher = new QFutureWatcher<void>(this);
             connect(watcher, &QFutureWatcher<void>::finished, this, [=]() {
+                header->addItemtoAddressBar(projectName);
                 currentProjectName = projectName;
                 if (documentsPage)
                     documentsPage->markDirty();

@@ -24,6 +24,8 @@ public:
     void setActive(bool active);
     bool active() const;
 
+    QString label() const { return name; }   // project name
+
 signals:
     void clicked(int index, const QString& name);
     void requestedClose(int index, const QString& name);
