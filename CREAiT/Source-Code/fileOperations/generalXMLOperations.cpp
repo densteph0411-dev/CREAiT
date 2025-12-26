@@ -9,6 +9,10 @@
 #include <filesystem>
 #include <iostream>
 #include <fstream>
+#include "dpapi_crypto.h"
+#include <algorithm>
+#include <cctype>
+
 
 namespace fs = std::filesystem;
 
@@ -23,12 +27,32 @@ generalXMLOperations::~generalXMLOperations() {
     // Destructor logic (can be empty)
 }
 
+static std::string normalizeFieldName(std::string elementName)
+{
+    // if elementName comes like "/userID" or "<userID>" etc, normalize it.
+    elementName.erase(std::remove_if(elementName.begin(), elementName.end(),
+        [](unsigned char c){
+            return c=='<' || c=='>' || c=='/' || std::isspace(c);
+        }), elementName.end());
+
+    return elementName;
+}
+
+static bool isSensitiveCredentialsField(const std::string& elementName, const std::string& context)
+{
+    if (context != "credentials") return false;
+
+    std::string clean = normalizeFieldName(elementName);
+    return (clean == "userID" || clean == "passWord");
+}
+
+
 void generalXMLOperations::setFieldValue(std::string elementName,
-                                         std::string textValue,
-                                         std::string description,
-                                         std::string fileName,
-                                         std::string projectName,
-                                         std::string context)
+                                        std::string textValue,
+                                        std::string description,
+                                        std::string fileName,
+                                        std::string projectName,
+                                        std::string context)
 {
     pugi::xml_document doc;
     pugi::xml_parse_result result = doc.load_file(fileName.c_str());
@@ -38,38 +62,57 @@ void generalXMLOperations::setFieldValue(std::string elementName,
         return;
     }
 
+    // Normalize for XPath usage
+    std::string cleanName = normalizeFieldName(elementName);
+
+    // ✅ Encrypt only credentials userID + passWord
+    std::string valueToStore = textValue;
+    if (isSensitiveCredentialsField(cleanName, context))
+    {
+        valueToStore = dpapiEncryptString(textValue);
+
+        // Fail-safe: don't overwrite with empty if encrypt failed
+        if (valueToStore.empty() && !textValue.empty())
+        {
+            std::cerr << "DPAPI encryption failed, refusing to overwrite " << cleanName << std::endl;
+            return;
+        }
+    }
+
     // XPath for project file
-    std::string xPath = "";
-    if((context == "project") ||
+    std::string xPath;
+    if ((context == "project") ||
         (context == "credentials") ||
         (context == "recordType") ||
-        (context == "linkType")){
-
-        xPath = "//projectInfo[@name='" + projectName + "']/fields" + elementName;
+        (context == "linkType"))
+    {
+        // ✅ FIXED: add missing "/"
+        xPath = "//projectInfo[@name='" + projectName + "']/fields/" + cleanName;
     }
     else
     {
-
-        xPath = "//fields" + elementName;
+        xPath = "//fields/" + cleanName;
     }
 
     pugi::xpath_node fieldNode = doc.select_node(xPath.c_str());
 
     if (fieldNode)
     {
-        // Set the field inner text to textValue
-        fieldNode.node().text().set(textValue.c_str());
-        // Set the child description text to description
-        fieldNode.node().child("description").text().set(description.c_str());
+        fieldNode.node().text().set(valueToStore.c_str());
+
+        // Safe: description child might not exist
+        if (fieldNode.node().child("description"))
+            fieldNode.node().child("description").text().set(description.c_str());
     }
     else
     {
-        std::cerr << "setElementTextInXMLFile-Error: Element " << elementName << " not found in XML." << std::endl;
+        std::cerr << "setElementTextInXMLFile-Error: Element " << cleanName
+                  << " not found in XML. XPath=" << xPath << std::endl;
     }
 
-    // Release the document
     doc.save_file(fileName.c_str());
 }
+
 
 void generalXMLOperations::setElementTextInXMLFile(std::string elementName, std::string textValue, std::string fileName)
 {

@@ -13,8 +13,11 @@
 		<parent>PROJ</parent>
 		<treeViewIndex>DIR_8</treeViewIndex>
 	</fields>
-	<links />
+	<links>
+		<link direction="Up" type="fileName">HwTest_1</link>
+	</links>
 	<versions>
 		<version versionNumber="1" versionDate="2025-11-05 09:32:26">Initial Version</version>
+		<version versionNumber="2" versionDate="2025-11-05 09:32:26">Added Link to HwTest_1</version>
 	</versions>
 </record>

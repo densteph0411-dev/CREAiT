@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <record>
 	<fields>
-		<fileName>../../Documentation/ExampleProject/testDirectory/CREAiT/Testing-1/record/DIR_8.xml</fileName>
+		<fileName>C:/Users/User/Downloads/requirementTool/requirementTool/CREAiT/Documentation/ExampleProject/testDirectory/CREAiT/Testing-1/record/DIR_8.xml</fileName>
 		<type>Directory</type>
 		<description>The prefix for the record ID</description>
 		<title>Software Requirement</title>

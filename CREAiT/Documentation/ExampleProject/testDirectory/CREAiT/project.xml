@@ -694,4 +694,120 @@
 			<credentialsFileName>credentials.xml</credentialsFileName>
 		</fields>
 	</projectInfo>
+	<projectInfo name="123">
+		<fields>
+			<AIConnectionID />
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>123</projectName>
+			<type>local</type>
+			<description>123</description>
+			<dataBaseName />
+			<IntegrationID />
+			<dataBaseUrl />
+			<toolName>CREAiT</toolName>
+			<IDPrefix>123</IDPrefix>
+		</fields>
+	</projectInfo>
+	<projectInfo name="121">
+		<fields>
+			<AIConnectionID />
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>121</projectName>
+			<type>local</type>
+			<description>12</description>
+			<dataBaseName />
+			<CMURL />
+			<IntegrationID />
+			<dataBaseURL />
+			<dataBaseUrl />
+			<toolName>CREAiT</toolName>
+			<IDPrefix>12</IDPrefix>
+			<credentialsFileName>credentials.xml</credentialsFileName>
+		</fields>
+	</projectInfo>
+	<projectInfo name="21">
+		<fields>
+			<AIConnectionID />
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>21</projectName>
+			<type>local</type>
+			<description>21</description>
+			<dataBaseName />
+			<CMURL />
+			<IntegrationID />
+			<dataBaseURL />
+			<dataBaseUrl />
+			<toolName>CREAiT</toolName>
+			<IDPrefix>12</IDPrefix>
+			<credentialsFileName>credentials.xml</credentialsFileName>
+		</fields>
+	</projectInfo>
+	<projectInfo name="321">
+		<fields>
+			<AIConnectionID />
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>321</projectName>
+			<type>Local</type>
+			<description>321</description>
+			<dataBaseName />
+			<CMURL />
+			<IntegrationID />
+			<dataBaseURL />
+			<dataBaseUrl />
+			<toolName>CREAiT</toolName>
+			<IDPrefix>12</IDPrefix>
+			<credentialsFileName>credentials.xml</credentialsFileName>
+		</fields>
+	</projectInfo>
+	<projectInfo name="33">
+		<fields>
+			<AIConnectionID />
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>33</projectName>
+			<type>Local</type>
+			<description>33</description>
+			<dataBaseName />
+			<CMURL />
+			<IntegrationID />
+			<dataBaseURL />
+			<dataBaseUrl />
+			<toolName>CREAiT</toolName>
+			<IDPrefix>12</IDPrefix>
+			<credentialsFileName>credentials.xml</credentialsFileName>
+		</fields>
+	</projectInfo>
+	<projectInfo name="22">
+		<fields>
+			<AIConnectionID />
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>22</projectName>
+			<type>Local</type>
+			<description>22</description>
+			<dataBaseName />
+			<CMURL />
+			<IntegrationID />
+			<dataBaseURL />
+			<dataBaseUrl />
+			<toolName>CREAiT</toolName>
+			<IDPrefix>22</IDPrefix>
+			<credentialsFileName>credentials.xml</credentialsFileName>
+		</fields>
+	</projectInfo>
+	<projectInfo name="qqq">
+		<fields>
+			<AIConnectionID />
+			<fileNameOnly>project.xml</fileNameOnly>
+			<projectName>qqq</projectName>
+			<type>local</type>
+			<description>qqq</description>
+			<dataBaseName />
+			<CMURL />
+			<IntegrationID />
+			<dataBaseURL />
+			<dataBaseUrl />
+			<toolName>CREAiT</toolName>
+			<IDPrefix>22</IDPrefix>
+			<credentialsFileName>credentials.xml</credentialsFileName>
+		</fields>
+	</projectInfo>
 </project>

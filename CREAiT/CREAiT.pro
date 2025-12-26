@@ -70,6 +70,7 @@ HEADERS += \
     Source-Code/dataObjects/DocumentRecord.h \
     Source-Code/dataObjects/records.h \
     Source-Code/dataObjects/dataDictionary.h \
+    Source-Code/fileOperations/dpapi_crypto.h \
     Source-Code/fileOperations/generalFileOperations.h \
     Source-Code/fileOperations/reviewfileoperations.h \
     Source-Code/fileOperations/settings.h \
@@ -229,6 +230,7 @@ SOURCES += \
     Source-Code/dataObjects/DocumentRecord.cpp \
     Source-Code/dataObjects/records.cpp \
     Source-Code/dataObjects/dataDictionary.cpp \
+    Source-Code/fileOperations/dpapi_crypto.cpp \
     Source-Code/fileOperations/generalFileOperations.cpp \
     Source-Code/fileOperations/reviewfileoperations.cpp \
     Source-Code/graphics/Automations/Common/automationdatacontroller.cpp \

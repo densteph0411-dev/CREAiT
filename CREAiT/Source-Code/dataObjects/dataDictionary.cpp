@@ -2,6 +2,8 @@
 
 #include "dataDictionary.h"
 
+#include "dpapi_crypto.h"  // add this include
+
 void DataDictionary::createField(const std::string& fieldName,
                                  const std::string& context,
                                  const std::string& fieldValue,
@@ -24,12 +26,23 @@ bool DataDictionary::removeField(const std::string& key, const std::string& cont
     return false;
 }
 
-std::string DataDictionary::getFieldValue(const std::string& key, const std::string& context) const {
+std::string DataDictionary::getFieldValue(const std::string& key, const std::string& context) const
+{
     auto contextIt = dictionary.find(context);
-    if (contextIt != dictionary.end()) {
+    if (contextIt != dictionary.end())
+    {
         auto fieldIt = contextIt->second.find(key);
-        if (fieldIt != contextIt->second.end()) {
-            return fieldIt->second.value;
+        if (fieldIt != contextIt->second.end())
+        {
+            std::string value = fieldIt->second.value;
+
+            // ✅ Decrypt only credentials fields
+            if (context == "credentials" && (key == "userID" || key == "passWord"))
+            {
+                return dpapiDecryptString(value);
+            }
+
+            return value;
         }
     }
     return "";
@@ -68,6 +81,34 @@ bool DataDictionary::setFieldValue(const std::string& key, const std::string& co
     }
     return false;
 }
+
+
+// bool DataDictionary::setFieldValue(const std::string& key,
+//                                    const std::string& context,
+//                                    const std::string& fieldValue)
+// {
+//     auto contextIt = dictionary.find(context);
+//     if (contextIt == dictionary.end()) return false;
+
+//     auto fieldIt = contextIt->second.find(key);
+//     if (fieldIt == contextIt->second.end()) return false;
+
+//     std::string valueToStore = fieldValue;
+
+//     if (context == "credentials" && (key == "userID" || key == "passWord"))
+//     {
+//         // prevent double-encryption
+//         if (fieldValue.rfind("DPAPI:v1:", 0) != 0)
+//         {
+//             valueToStore = dpapiEncryptString(fieldValue);
+//             if (valueToStore.empty() && !fieldValue.empty())
+//                 return false;
+//         }
+//     }
+
+//     fieldIt->second.value = valueToStore;
+//     return true;
+// }
 
 void DataDictionary::clearDataDictionary() {
     dictionary.clear();

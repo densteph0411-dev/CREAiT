@@ -14,21 +14,20 @@ AddressBar::~AddressBar() {
 }
 
 void AddressBar::addItem(const QIcon& icon, const QString& label, bool closable) {
-    if (addressBarItems.size() > 0) {
-        QLabel* separator = new QLabel("|");
-        separator->setObjectName("addressBarSeparator");
-        separator->setContentsMargins(10, 0, 10, 0);
-        separator->setStyleSheet("color: grey;");
-
-        mainLayout->addWidget(separator);
-        separators.append(separator);
-    }
 
     int existingId = findIdByLabel(label);
 
-    qDebug() << "existingId" << existingId;
-
     if (existingId == -1) {
+        if (addressBarItems.size() > 0) {
+            QLabel* separator = new QLabel("|");
+            separator->setObjectName("addressBarSeparator");
+            separator->setContentsMargins(10, 0, 10, 0);
+            separator->setStyleSheet("color: grey;");
+
+            mainLayout->addWidget(separator);
+            separators.append(separator);
+        }
+
         int index = nextId++;
         auto* item = new AddressBarItem(index, icon, label, closable, this);
         mainLayout->addWidget(item);
@@ -93,7 +92,6 @@ int AddressBar::findIdByLabel(const QString& label) const
         if (!item) continue;
 
         if (item->label() == label) {
-            qDebug() << "key" << it.key();
             return it.key();
         }
     }

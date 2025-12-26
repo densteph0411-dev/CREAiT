@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<fileName>C:/Users/User/Downloads/requirementTool/requirementTool/CREAiT/Documentation/ExampleProject/testDirectory/CREAiT/22/record/DIR_1.xml</fileName>
+		<type>Directory</type>
+		<description />
+		<title>Hardware Test Procedure</title>
+		<deleted />
+		<lastModifiedBy />
+		<status>Draft</status>
+		<lastModifiedOn>2025-12-25 21:28:44</lastModifiedOn>
+		<version>1</version>
+		<parent>PROJ</parent>
+		<treeViewIndex />
+	</fields>
+	<links />
+	<versions>
+		<version versionNumber="1" versionDate="2025-12-25 21:28:44">Initial Version</version>
+	</versions>
+</record>

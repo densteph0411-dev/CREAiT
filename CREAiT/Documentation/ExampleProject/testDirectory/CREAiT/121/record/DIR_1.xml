@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<record>
+	<fields>
+		<fileName></fileName>
+		<type>Directory</type>
+		<description></description>
+		<title>Hardware Test</title>
+		<deleted></deleted>
+		<lastModifiedBy></lastModifiedBy>
+		<status>Draft</status>
+		<lastModifiedOn>2025-12-25 21:10:03</lastModifiedOn>
+		<version>1</version>
+		<parent>PROJ</parent>
+		<treeViewIndex></treeViewIndex>
+		<12></12>
+	</fields>
+	<links />
+	<versions />
+</record>
